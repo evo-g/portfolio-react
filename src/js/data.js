@@ -33,7 +33,7 @@ export const services = [
   {
     id: 8,
     title: 'mongodb',
-    img: require('../images/MongoDB-logo.png')
+    img: require('../images/MongoDB-Logo.png')
   },
   {
     id: 9,
