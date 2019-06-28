@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,14 +9,14 @@ const Footer = () => {
       <h2>Get in Touch With Me</h2>
       <div className='in-touch'>
         <a href='https://www.linkedin.com/in/evodio-garcia-57761669/' target='blank'>
-          <img src={require('../../../images/linkedin.png')} />
+          <img src={require('../../../images/linkedin.png')} alt='linkedin link' />
         </a>
         <a href='https://github.com/evo-g' target='blank'>
-          <img src={require('../../../images/github.png')} />
+          <img src={require('../../../images/github.png')} alt='github link' />
         </a>
-        <a href='/contact'> 
-          <img src={require('../../../images/contactMe.png')} />
-        </a>
+        <Link to='/contact'> 
+          <img src={require('../../../images/contactMe.png')} alt='contact link' />
+        </Link>
       </div>
     </div>
   </div>

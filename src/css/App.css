@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   word-wrap: break-word;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   width: 100%;
 }
@@ -13,13 +13,6 @@ body {
 }
 
 /* navbar */
-
-/* .nav-container h4 {
-  color: #5093E3;
-  text-decoration: none;
-  margin: 10px 15px;
-  font-weight: 500;
-} */
 
 #main-navigation {
   text-align: center;
@@ -42,14 +35,11 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  padding-left: 0px;
 }
 
-/* #main-navigation ul li {
-  display: inline-block;
-} */
-
 #main-navigation ul li a {
-  color: #2f57d2;
+  color: #f54f33;;
   text-decoration: none;
   padding: 10px 15px;
 }
@@ -97,7 +87,6 @@ body {
 
 #services {
   width: 100%;
-  margin: 5px;
 }
 .section-header h2 {
   font-size: 30px;
@@ -146,13 +135,22 @@ body {
   justify-content: center;
 }
 .site-section-inside-pic img {
-  height: 5rem;
+  height: 6rem;
 }
 
+.site-section-inside h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+}
 
-.site-section-inside h4 {
-  display: flex;
-  justify-content: center;
+.site-section-inside p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.center {
+  line-height: 30px;
 }
 
 .service-box {
@@ -164,14 +162,12 @@ body {
 }
 
 .service-box img {
-  height: 2rem;
+  height: 2.5rem;
   padding: 10px;
 }
 
 .education {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
 }
 
 .site-section-secondary {
@@ -201,6 +197,7 @@ body {
   font-display: bold;
   line-height: 30px;
   margin: 10px;
+  font-size: 17px;
 }
 
 .item img {
@@ -218,15 +215,25 @@ body {
 
 #about {
   background: #ECF0F1;
-  padding: 35px;
+  padding: 40px;
   line-height: 30px;
   margin: 50px;
   overflow-y: auto;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #777;
+
+}
+
+#about h2 {
+  color: #5093E3;
 }
 
 
 .about p {
   padding: 10px;
+  color: #5e5e5e;
 }
 
 .in-touch {
@@ -276,10 +283,163 @@ body {
 }
 
 /* contact */
+
+.taller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.taller h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+  display: flex;
+  justify-content: center;
+
+}
+
 .center-form {
   display: flex;
   justify-content: center;
   align-content: center;
+  width: 100%;
   padding: 20px;
   background-color: #ECF0F1; 
+}
+
+/* mobile  */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .container {
+    min-width: 400px;
+    display: block;
+  }
+
+  /* [class*="col-"] {
+    width: 100%;
+  } */
+
+  /* HEADER   */
+  #main-navigation {
+      display: block;
+      padding: 5px 0px 5px 0px;
+      width: 100%;
+  }
+
+  #main-navigation ul {
+      display: block;
+      margin: 5px;
+      padding-left: 0px;
+  }
+
+  #main-navigation ul li {
+    padding: 5px;
+  }
+  
+/*  HERO  */
+  .hero {
+    min-height: 200px;
+  }
+  .hero-content {
+    padding-top: 80px;
+  }
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .site-section-inside {
+    display: block;
+    text-align: center;
+  }
+
+  .site-section-inside img {
+    height: 4rem;
+  }
+
+  .site-section .one {
+    display: block;
+    font-weight: 200;
+    overflow-y: auto;
+    font-size: 15px;
+  }
+
+  .site-section .two {
+    display: block;
+    overflow-y: auto;
+    font-size: 35px;
+    font-weight: 200;
+  }
+
+  .site-section {
+    display: block;
+    width: 100%;
+  }
+  
+/* Projects BOXES   */
+  .row-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    display: block;
+    text-align: center;
+    min-height: 300px;
+  }
+
+  .item-in {
+    display: block;
+  }
+  .item-in h3 {
+    display: block;
+  }
+  .item-in p {
+    display: block;
+  }
+
+
+
+
+/* contact */
+
+  .taller {
+    margin: 0px auto;
+    height: 75rem;
+    display: block;
+  }
+
+  .second h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #777;
+    padding: 20px;
+  }
+
+  .center-form {
+    width:100%;
+  }
 }

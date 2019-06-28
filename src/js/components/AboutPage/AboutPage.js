@@ -5,10 +5,9 @@ const AboutPage = () => {
     <div id="about" className="section-header about">
       <h2>About Me</h2>
       <p className="about-me">
-        Hi, my name is Evodio Garcia, a San Diego native. I’m a mechanic turned software developer, who went from
-        breaking down cars
-        to breaking down code. Working with my hands is not new to me now I aim to take it to new frontiers
-        in my life. I grew up in East County. I speak Spanish and English. I am new to software devolopment,
+        Hi, my name is Evodio Garcia! I am a San Diego native who grew up in East County. I speak Spanish and English. I’m a mechanic turned software developer, who went from
+        breaking down cars to breaking down code. Working with my hands is not new to me now I aim to take it to new frontiers
+        in my life. I am new to software devolopment,
         but not new to project building. I have always enjoyed building things, as a child I always took my toys
         apart and was facinated by how things worked, later it turned into building project cars. Which took me to
         an automotive trade school where I learned the ins and outs of a car. Now I am interested in making websites,
