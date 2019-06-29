@@ -22,7 +22,6 @@ const HomePage = () => {
                 <p>{item.description}</p>
               </div>
             </div>
-
               ))
             }
           </div>
@@ -33,4 +32,3 @@ const HomePage = () => {
 }
 
 export default HomePage;
-
