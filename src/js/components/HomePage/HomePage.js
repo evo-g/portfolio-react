@@ -6,7 +6,7 @@ const HomePage = () => {
     <div id='home'>
       <div className="hero">
         <div className="hero-content">
-          <h1 className="hero-title"> Evodio Garcia | Portfolio</h1>
+          <h1 className="hero-title">Evodio Garcia | Portfolio</h1>
         </div>
       </div>
       <div className="site-section">
