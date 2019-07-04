@@ -54,15 +54,6 @@ body {
 
 #home {
   background-color: #53899f;
-  background-image:
-    linear-gradient(
-      to right, 
-      #53899f,
-      #53899f 5%,
-      #53899f 15%,
-      #53898f 25%,
-      #53898f 75%
-    );
 }
 /* HERO SECTION */
 .hero {
@@ -144,24 +135,15 @@ body {
   color: #fafafa;
   text-align: center;
   background-color: #53899f;
-  background-image:
-    linear-gradient(
-      to right, 
-      #53899f,
-      #53899f 5%,
-      #53899f 15%,
-      #53898f 25%,
-      #53898f 45%
-    );
 }
 
-/* .section-header-end h2 {
+.section-header-end h2 {
   font-size: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
-} */
+}
 
 .row {
   display: flex;
@@ -189,12 +171,10 @@ body {
 
 
 .site-section-inside {
-
   display: flex;
   flex-direction: column;
   margin: 0px auto;
   padding: 15px;
-  overflow-y: auto;
   flex: 1;
 }
 
@@ -202,6 +182,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .site-section-inside-pic img {
   height: 6rem;
 }
@@ -309,6 +290,7 @@ body {
   justify-content: space-evenly;
   padding: 10px;
 }
+
 .in-touch a img {
   height: 4rem;
   border-radius: 20%;
@@ -317,6 +299,12 @@ body {
 .in-touch a img:hover {
   background-color:#5093E3;
   transition: 0.3s ease all;
+}
+
+/* connect */
+.connect {
+  display: flex;
+  text-align: center;
 }
 
 /* footer*/
@@ -438,13 +426,18 @@ body {
 
   .site-section-inside {
     display: block;
-    height: 500px;
+    min-height: 300px;
     text-align: center;
     width: 100%;
   }
 
   .site-section-inside img {
     height: 4rem;
+  }
+
+  .site-section-inside-in {
+    display: block;
+    width: 100%;
   }
 
   .site-section .one {
