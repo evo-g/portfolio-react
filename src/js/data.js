@@ -113,7 +113,7 @@ export const projects = [
     title: 'vstda',
     alt: 'vstda',
     img: require('../images/VSTDA.png'),
-    href: 'https://vstda-very-simple-to-do-app.herokuapp.com/',
+    href: 'https://compassionate-benz-1ae465.netlify.com/',
     description: 'Very simple to do app. As the name states it lets you organize todos for your daily life. Another project for school which uses Reactjs and bootsrap for styling. Creating this project was anything, but simple. Here state is passed up and down from different components.'
   },
-]
+];
