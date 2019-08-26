@@ -81,7 +81,7 @@ export const projects = [
     title: 'e-store',
     alt: 'e-store',
     img: require('../images/e-store.png'),
-    href: 'https://e-com-store.herokuapp.com/',
+    href: 'https://react-practice-e-store.netlify.com/',
     description: 'As the name implies it is an e-commerce store that is not functional, however, it can be hooked up to paypal through an npm package. It uses react and the context API to keep track of state. Uses a combonation of bootstrap, and styled-components for styling.'
   },
   {
