@@ -335,7 +335,7 @@ main {
   background-color: #ECF0F1; 
 }
 
- /* nav toggle */
+ /* nav toggle fix later */
  .navbar-toggle {
   position: absolute;
   top: 2.5rem;
@@ -343,6 +343,7 @@ main {
   cursor: pointer;
   color: #00a7e0;
   font-size: 24px;
+  display: none;
 }
 
 .active {
