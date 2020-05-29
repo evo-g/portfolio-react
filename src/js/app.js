@@ -1,7 +1,8 @@
 import React from 'react';
 import {
-  HashRouter as Router,
-  Route
+  BrowserRouter as Router,
+  Route,
+  Switch
 } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
 import AboutPage from './components/AboutPage/AboutPage';
@@ -13,13 +14,15 @@ import '../css/App.css';
 
 export default () => (
   <Router>
-    <div className='container'>
+    <main className='container'>
       <Navbar />
-      <Route exact path='/' component={HomePage} />
-      <Route path='/about' component={AboutPage} />
-      <Route path='/contact' component={ContactPage} />
-      <Route path='/services' component={ServicesPage} />
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/about' component={AboutPage} />
+        <Route path='/contact' component={ContactPage} />
+        <Route path='/services' component={ServicesPage} />
+      </Switch>
       <Footer />
-    </div>
+    </main>
   </Router>
 );

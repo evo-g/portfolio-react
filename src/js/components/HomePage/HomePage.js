@@ -1,33 +1,35 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { projects } from '../../data';
+import styled from 'styled-components';
 
-const HomePage = () => {
+const HomeWrapper = styled.section`
+  background-color: #E8EAF6;
+  h3 {
+    color: #40C4FF;
+    text-align: center;
+  }
+`
+
+
+function HomePage() {
   return (
-    <div id='home'>
-      <div className="hero">
-        <div className="hero-content">
-          <h1 className="hero-title">Evodio Garcia | Portfolio</h1>
-        </div>
-      </div>
-      <div className="site-section">
-        <div className="section-header">
-          <h2 className="text-center">Projects</h2>
-          <div className="row-2">
-            {
-              projects.map(item => (
-            <div className="item" key={item.id}>
-              <a href={item.href} target='blank' alt={item.alt}><img src={item.img} /></a>
-              <div className='item-in'>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+    <HomeWrapper>
+      <h3>Projects</h3>
+      <div className="row">
+        {
+          projects.reverse().map(project => (
+            <div className="project" key={project.id}>
+              <img src={project.img} alt={project.alt} />
+              <div className='project-info'>
+                  <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <a href={project.href} target='blank' alt={project.alt}><span>Check it out</span></a>
               </div>
             </div>
-              ))
-            }
-          </div>
-        </div>
+          ))
+        }
       </div>
-    </div>
+    </HomeWrapper>
   )
 }
 

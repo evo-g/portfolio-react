@@ -6,21 +6,28 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel ./public/index.html",
-    "build": "parcel build ./public/index.html/"
+    "build": "parcel build ./public/index.html/",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router": "^5.0.1",
-    "react-router-dom": "^5.0.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "s": "^1.0.0",
+    "style": "0.0.3",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.12.3"
+    "cypress": "^3.8.3",
+    "parcel-bundler": "^1.12.4"
   }
 }

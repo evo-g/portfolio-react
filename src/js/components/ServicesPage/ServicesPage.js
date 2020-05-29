@@ -1,54 +1,46 @@
 import React from 'react';
-import { services } from '../../data';
+import { mainTechnologies, familiarServices, servicesMedium } from '../../data';
+
+const mainTech = mainTechnologies.map(service => {
+  return (
+    <li key={service.id}>
+      <div className='service-card-1'>{service.title}</div>
+    </li>
+  );
+});
+
+const mediumTech = servicesMedium.map(service => {
+  return (
+    <li key={service.id}>
+      <div className='service-card-2'>{service.title}</div>
+    </li>
+  );
+});
+
+const familiarTech = familiarServices.map(service => {
+  return (
+    <li key={service.id}>
+      <div className='service-card-3'>{service.title}</div>
+    </li>
+  );
+});
 
 const ServicePage = () => {
   return (
-    <div id='services'>
-        <div className='section-header'>
-          <h2> Services </h2>
-
-          <div className='row'>
-            <div className='site-section-inside'>
-              <div className='site-section-inside-pic'>
-                <img src={require('../../../images/js.png')} />
-              </div>
-              <div className='site-section-inside-in'>
-                <h3>Tools I Use</h3>
-                <p className='one'>JavaScript, Reactjs, Redux, Nodejs, JQuery, CSS3, HTML5, Bootstrap, MongoDB, MySQL,
-                  Redis, and recently React Native and Expo. Very proficent with git workflow and version control.
-                  Heroku, Now, and Netlify to deploy projects. Cypress and CircleCi for testing. Some Webpack experience and Parcel which I used for this project.
-                  Jira and Trello for agile workflow. Also socket.io is something new I am learning more about.
-                </p>
-              </div>
-            </div>
-
-            <div className='site-section-inside'>
-              <div className='service-box'>
-                {
-                  services.reverse().map(imgs => (
-                    <img key={imgs.id} src={imgs.img} alt={imgs.alt} />
-                  ))
-                }
-              </div>
-            </div>
-
-            <div className='site-section-inside'>
-              <div className='site-section-inside-pic'>
-                <img src={require('../../../images/education.png')} />
-              </div>
-              <div className='site-section-inside-in'>
-                <h3>Education</h3>
-                <div className='education'>
-                  <p className='two'>Origin Code Academy</p>
-                  <p className='two'>Cuyamaca College</p>
-                  <p className='two'>Grossmont College</p>
-                  <p className='two'>Universal Technical Institute</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+    <section id='services'>
+      <div className='services'>
+        <h2>Core Technologies</h2>
+        <ul>{mainTech}</ul>
+      </div>
+      <div className='services'>
+        <h2>Comfortable working with</h2>
+        <ul>{mediumTech}</ul>
+      </div>
+      <div className='services'>
+        <h2>Familiar Technologies and Expoloring</h2>
+        <ul>{familiarTech}</ul>
+      </div>
+    </section>
   )
 }
 
