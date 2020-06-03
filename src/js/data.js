@@ -3,79 +3,66 @@ export const mainTechnologies = [
   {
     id: 1,
     title: 'JavaScript',
-    img: require('../images/html-css-js-logo.png'),
     alt: 'javaScript'
   },
   {
     id: 2,
     title: 'CSS',
-    img: require('../images/html-css-js-logo.png'),
     alt: 'css'
   },
   {
     id: 3,
     title: 'HTML',
-    img: require('../images/html-css-js-logo.png'),
     alt: 'html'
   },
   {
     id: 4,
     title: 'React.js',
-    img: require('../images/reactjs.png'),
     alt: 'reactjs'
   },
   {
     id: 5,
     title: 'Node.js',
-    img: require('../images/NodeJs.png'),
     alt: 'nodejs'
   },
   {
     id: 6,
     title: 'Express.js',
-    img: require('../images/Expressjs.png'),
     alt: 'expressjs'
   },
   {
     id: 7,
     title: 'MongoDB',
-    img: require('../images/MongoDB-Logo.png'),
     alt: 'mongodb'
   },
   {
     id: 8,
     title: 'Redux',
-    img: require('../images/Redux.png'),
     alt: 'redux'
   },
   {
     id: 9,
     title: 'Heroku',
-    img: require('../images/heroku.png'),
     alt: 'heroku'
   },
   {
     id: 10,
     title: 'Parcel.js',
-    img: null,
     alt: 'parcel'
   },
   {
     id: 11,
     title: 'Netlify',
-    img: null,
     alt: 'netlify'
   },
   {
     id: 12,
     title: 'ES6',
-    img: null,
     alt: 'es6'
   },
   {
     id: 13,
     title: 'Git',
-    img: null,
     alt: 'git'
   }
 ];
@@ -84,49 +71,41 @@ export const servicesMedium = [
   {
     id: 1,
     title: 'Expo',
-    img: require('../images/expo.png'),
     alt: 'expo'
   },
   {
     id: 2,
     title: 'Webpack',
-    img: null,
     alt: 'webpack'
   },
   {
     id: 3,
     title: 'Mongoose',
-    img: null,
     alt: 'mongoose'
   },
   {
     id: 5,
     title: 'loopback',
-    img: require('../images/loopback.png'),
     alt: 'loopback'
   },
   {
     id: 6,
     title: 'JQuery',
-    img: require('../images/jquery.png'),
     alt: 'jquery'
   },
   {
     id: 7,
     title: 'Socket.io',
-    img: null,
     alt: 'socket.io'
   },
   {
     id: 8,
     title: 'MySQL',
-    img: require('../images/MySQL.png'),
     alt: 'mysql'
   },
   {
     id: 9,
     title: 'React-Native',
-    img: require('../images/react-native.png'),
     alt: 'react-native'
   },
   {
@@ -164,34 +143,34 @@ export const familiarServices = [
   },
   {
     id: 4,
-    title: 'The Open CLI Framework',
-    img: null,
-    alt: 'The Open CLI Framework'
-  },
-  {
-    id: 5,
     title: 'Puppeteer',
     img: null,
     alt: 'puppeteer'
   },
   {
-    id: 6,
+    id: 5,
     title: 'TailWindCSS',
     img: null,
     alt: 'tail wind CSS'
   },
   {
-    id: 7,
+    id: 6,
     title: 'Shopify',
     img: null,
     alt: 'shopify'
   },
   {
-    id: 8,
+    id: 7,
     title: 'ServiceNow',
     img: null,
     alt: 'service now platform'
   },
+  {
+    id: 8,
+    title: 'The Open CLI Framework',
+    img: null,
+    alt: 'The Open CLI Framework'
+  }
 ]
 
 export const projects = [
@@ -199,23 +178,23 @@ export const projects = [
     id: 1,
     title: 'e-store',
     alt: 'e-store',
-    img: require('../images/e-store.png'),
+    img: require('../images/thumbs/e-store-thumb.png'),
     href: 'https://react-practice-e-store.netlify.com/',
     description: 'As the name implies it is an e-commerce store that is not functional, however, it can be hooked up to paypal through an npm package. It uses react and the context API to keep track of state. Uses a combonation of bootstrap, and styled-components for styling.'
   },
   {
     id: 2,
-    title: 'hackathon',
-    alt: 'hackathon',
-    img: require('../images/hackathon.png'),
-    href: 'https://h-hackathon.herokuapp.com/',
+    title: 'Movie Finder',
+    alt: 'hackathon Movie Finder',
+    img: require('../images/thumbs/hackathon-thumb.jpg'),
+    href: 'https://awesome-morse-9400db.netlify.app/',
     description: 'A search engine for movies, makes two different API calls to find more details on the movie you search. Was made for a school project called Hackathon, in which we have 72 hours to make a Reactjs project from scratch. Uses bootstrap and css for styling and has 2 API calls.'
   },
   {
     id: 3,
     title: 'weather-app',
     alt: 'weather-app',
-    img: require('../images/weather-app.png'),
+    img: require('../images/thumbs/weather-app-thumb.png'),
     href: 'https://youthful-banach-ce065f.netlify.app/',
     description: 'In this project Redux, Axios, Reactjs, promise middleware, was used to create an app to check weather across any city searched. Also stores the history of each city search with the time and date searched using a dependecy called moment to format it.'
   },
@@ -223,7 +202,7 @@ export const projects = [
     id: 4,
     title: 'oca-mobile-app',
     alt: 'oca-mobile-app',
-    img: require('../images/oca-mobile-app.png'),
+    img: require('../images/thumbs/oca-app-thumb.jpg'),
     href: 'https://play.google.com/store/apps/details?id=com.oca.OCApp',
     description: 'Disclaimer: The school has shut down and is no longer in the google play store. However, when it was in use it was live. It was a Origin Code Academy mobile application for students to check-in and get information about progress in the program. In this project my group and I are using Expo, React Native, Redux, MongoDB, and loopback to create a mobile friendly replacement for a bar code scanner.'
   },
@@ -231,7 +210,7 @@ export const projects = [
     id: 5,
     title: 'vstda',
     alt: 'vstda',
-    img: require('../images/VSTDA.png'),
+    img: require('../images/thumbs/VSTDA-tumb.png'),
     href: 'https://compassionate-benz-1ae465.netlify.com/',
     description: 'Very simple to do app. As the name states it lets you organize todos for your daily life. Another project for school which uses Reactjs and bootsrap for styling. Creating this project was anything, but simple. Here state is passed up and down from different components.'
   },
@@ -239,7 +218,7 @@ export const projects = [
     id: 6,
     title: 'grid-sample-site',
     alt: 'grid',
-    img: require('../images/grid-sample.png'),
+    img: require('../images/thumbs/grid-sample-thumb.png'),
     href: 'https://grid-express.herokuapp.com/',
     description: 'A fun project that was orginally given to me as a front-end developer test and thought it would be a nice way to showcase some of my talents. Using HTML, CSS, and JavaScript'
   },
@@ -247,7 +226,7 @@ export const projects = [
     id: 7,
     title: 'Cruz Performance',
     alt: 'cruz performance',
-    img: require('../images/cruz-performance.jpg'),
+    img: require('../images/thumbs/Cruz-Perfromance-thumb.png'),
     href: 'https://unruffled-einstein-bea7be.netlify.app/',
     description: 'A small site created for a friends business. Got to use React hooks to create a burger menu to navigate around the different pages. Also set up links to direct a call or text the business.'
   },
@@ -255,7 +234,7 @@ export const projects = [
     id: 8,
     title: 'Quiz App',
     alt: 'quiz app',
-    img: require('../images/quiz-app.jpg'),
+    img: require('../images/thumbs/quiz-app-thumb.png'),
     href: 'https://js-quick-quiz-app.herokuapp.com/',
     description: 'A quiz app that uses no framework only HTML,CSS,JS. It does a fetch call to Open Trivia Database for random questions. Uses local storage to save the top 5 high scores. Has a simple Express server.'
   },

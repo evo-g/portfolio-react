@@ -28,7 +28,7 @@ const NavWrapper = styled.nav`
     padding: 1rem;
     text-decoration: none;
   }
-  
+
   .top-nav li a:visited {
     color: initial;
   }
@@ -55,16 +55,12 @@ const NavWrapper = styled.nav`
 `
 
 function Navbar() {
-  const [isShowing, setShowing] = useState(false);
-  console.log(window.innerWidth)
+  // const [isShowing, setShowing] = useState(false);
+  // console.log(window.innerWidth)
 
   return (
     <header>
       <NavWrapper>
-        <span className="navbar-toggle" id="js-navbar-toggle">
-            <i className
-            ="fas fa-bars"></i>
-        </span>
         <ul className="top-nav">
           <li>
             <Link to='/'>Home</Link>
