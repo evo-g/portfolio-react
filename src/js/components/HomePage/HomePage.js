@@ -4,10 +4,11 @@ import styled from 'styled-components';
 
 const HomeWrapper = styled.section`
   background-color: #E8EAF6;
-  h3 {
+  h2 {
     color: #40C4FF;
     width: 725px;
-    padding: .5rem;
+    padding: .7rem;
+    margin-left: 18px;
   }
 `;
 
@@ -35,22 +36,24 @@ function HomePage() {
   return (
     <HomeWrapper>
       <div className="row">
-        <h3>Projects</h3>
+        <h2>Projects</h2>
         {
           projects.reverse().map(project => (
             <div className="project" key={project.id}>
-              <a href={project.href} target='blank' alt={project.alt}>
+              <div className='column'>
                 {loader ? <div id='loader'></div> : <img src={project.img} alt={project.alt} />}
-              </a>
+                <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
+              </div>
+
               <div className='project-info'>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a href={project.href} target='blank' alt={project.alt}><span>Check it out</span></a>
+                <a className='color-gr' href={project.href} target='blank' alt={project.alt}><span>Check it out</span></a>
               </div>
             </div>
           ))
         }
-        <h3>More Coming Soon</h3>
+        <h2>More Coming Soon</h2>
       </div>
     </HomeWrapper>
   )

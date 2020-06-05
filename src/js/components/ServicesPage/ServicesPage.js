@@ -1,10 +1,11 @@
 import React from 'react';
 import { mainTechnologies, familiarServices, servicesMedium } from '../../data';
+import './Services.css';
 
 const mainTech = mainTechnologies.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card-1'>{service.title}</div>
+      <div className='service-card card-1'>{service.title}</div>
     </li>
   );
 });
@@ -12,7 +13,7 @@ const mainTech = mainTechnologies.map(service => {
 const mediumTech = servicesMedium.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card-2'>{service.title}</div>
+      <div className='service-card card-2'>{service.title}</div>
     </li>
   );
 });
@@ -20,7 +21,7 @@ const mediumTech = servicesMedium.map(service => {
 const familiarTech = familiarServices.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card-3'>{service.title}</div>
+      <div className='service-card card-3'>{service.title}</div>
     </li>
   );
 });
