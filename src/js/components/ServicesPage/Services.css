@@ -14,7 +14,8 @@
 
 .services h2 {
   text-align: center;
-  color: #039BE5;
+  color: #01579B;
+  border-bottom: 1px solid #212121;
 }
 
 .services ul {
@@ -34,14 +35,14 @@
   color: #fff;
   padding: 2rem 4rem;
   border-radius: .3rem;
-  box-shadow: 1px 1px 1px #424242;
+  box-shadow: 1px 1px 1px #212121;
 }
 
 .card-1 {
-  background-color: #00E676;
+  background-color: #4FC3F7;
 }
 
 .card-2 {
-  background-color: #FFEA00;
+  background-color: #FFF176;
   color: #111111;
 }
