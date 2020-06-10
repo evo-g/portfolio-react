@@ -5,7 +5,10 @@ import './Services.css';
 const mainTech = mainTechnologies.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card card-1'>{service.title}</div>
+      <div className='service-card card-1'>
+        <h3>{service.title}</h3>
+        <p>Amount of Experience: {service.experience}</p>
+      </div>
     </li>
   );
 });
@@ -13,7 +16,10 @@ const mainTech = mainTechnologies.map(service => {
 const mediumTech = servicesMedium.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card card-2'>{service.title}</div>
+      <div className='service-card card-2'>
+        <h3>{service.title}</h3>
+        <p>Amount of Experience: {service.experience}</p>
+      </div>
     </li>
   );
 });
@@ -21,7 +27,10 @@ const mediumTech = servicesMedium.map(service => {
 const familiarTech = familiarServices.map(service => {
   return (
     <li key={service.id}>
-      <div className='service-card card-3'>{service.title}</div>
+      <div className='service-card card-3'>
+        <h3>{service.title}</h3>
+        <p>Amount of Experience: {service.experience}</p>
+      </div>
     </li>
   );
 });

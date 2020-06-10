@@ -3,7 +3,12 @@ import { projects } from '../../data';
 import styled from 'styled-components';
 
 const HomeWrapper = styled.section`
-  background-color: #E8EAF6;
+  background-color: #CFD8DC;
+  button {
+    color: #00a7e0;
+    padding: 2px 4px;
+    margin-left: 5px;
+  }
   h2 {
     color: #40C4FF;
     width: 725px;
@@ -12,22 +17,14 @@ const HomeWrapper = styled.section`
   }
 `;
 
-// const projectHolder = projects.reverse().map(project => (
-//   <div className="project" key={project.id}>
-//     <a href={project.href} target='blank' alt={project.alt}>
-//       <img src={project.img} alt={project.alt} />
-//     </a>
-//     <div className='project-info'>
-//         <h3>{project.title}</h3>
-//       <p>{project.description}</p>
-//       <a href={project.href} target='blank' alt={project.alt}><span>Check it out</span></a>
-//     </div>
-//   </div>
-// ));
-
-
 function HomePage() {
   const [loader, setLoader] = useState(true);
+  // const [dark, setDark] = useState(false);
+
+  // const themeStyles = {
+  //   backgroundColor: dark ? '#212121' : '#F5F5F5'
+  // };
+
 
   useEffect(()=> {
     setLoader(false);
@@ -35,20 +32,21 @@ function HomePage() {
 
   return (
     <HomeWrapper>
+      {/* <button onClick={() => setDark(prevDark => !prevDark)}> Change Theme</button> */}
       <div className="row">
         <h2>Projects</h2>
         {
-          projects.reverse().map(project => (
+          projects.map(project => (
             <div className="project" key={project.id}>
               <div className='column'>
-                {loader ? <div id='loader'></div> : <img src={project.img} alt={project.alt} />}
+                {loader ? <div id='loader'></div> : <a className='a-column' href={project.href} target='blank' alt={project.alt}><img src={project.img} alt={project.alt} /></a>}
                 <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
               </div>
 
               <div className='project-info'>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a className='color-gr' href={project.href} target='blank' alt={project.alt}><span>Check it out</span></a>
+                <a className='color-gr' href={project.href} target='blank' alt={project.alt}>Check it out</a>
               </div>
             </div>
           ))

@@ -3,67 +3,80 @@ export const mainTechnologies = [
   {
     id: 1,
     title: 'JavaScript',
-    alt: 'javaScript'
+    alt: 'javaScript',
+    experience: '2 years'
   },
   {
     id: 2,
     title: 'CSS',
-    alt: 'css'
+    alt: 'css',
+    experience: '2 years'
   },
   {
     id: 3,
     title: 'HTML',
-    alt: 'html'
+    alt: 'html',
+    experience: '2 years'
   },
   {
     id: 4,
     title: 'React.js',
-    alt: 'reactjs'
+    alt: 'reactjs',
+    experience: '2 years'
   },
   {
     id: 5,
     title: 'Node.js',
-    alt: 'nodejs'
+    alt: 'nodejs',
+    experience: '2 years'
   },
   {
     id: 6,
     title: 'Express.js',
-    alt: 'expressjs'
+    alt: 'expressjs',
+    experience: '2 years'
   },
   {
     id: 7,
     title: 'MongoDB',
-    alt: 'mongodb'
+    alt: 'mongodb',
+    experience: '2 years'
   },
   {
     id: 8,
     title: 'Redux',
-    alt: 'redux'
+    alt: 'redux',
+    experience: '2 years'
   },
   {
     id: 9,
     title: 'Heroku',
-    alt: 'heroku'
+    alt: 'heroku',
+    experience: '2 years'
   },
   {
     id: 10,
     title: 'Parcel.js',
-    alt: 'parcel'
+    alt: 'parcel',
+    experience: '1 year'
   },
   {
     id: 11,
     title: 'Netlify',
-    alt: 'netlify'
+    alt: 'netlify',
+    experience: '1 year'
   },
   {
     id: 12,
     title: 'ES6',
-    alt: 'es6'
+    alt: 'es6',
+    experience: '2 years'
   },
   {
     id: 13,
     title: 'Git',
-    alt: 'git'
+    alt: 'git',
+    experience: '2 years'
   }
 ];
 
@@ -71,54 +84,64 @@ export const servicesMedium = [
   {
     id: 1,
     title: 'Expo',
-    alt: 'expo'
+    alt: 'expo',
+    experience: '1 1/2 years'
   },
   {
     id: 2,
     title: 'Webpack',
-    alt: 'webpack'
+    alt: 'webpack',
+    experience: '1 1/2 years'
   },
   {
     id: 3,
     title: 'Mongoose',
-    alt: 'mongoose'
+    alt: 'mongoose',
+    experience: '1 1/2 years'
   },
   {
     id: 5,
     title: 'loopback',
-    alt: 'loopback'
+    alt: 'loopback',
+    experience: '1 1/2 years'
   },
   {
     id: 6,
     title: 'JQuery',
-    alt: 'jquery'
+    alt: 'jquery',
+    experience: '1 year'
   },
   {
     id: 7,
     title: 'Socket.io',
-    alt: 'socket.io'
+    alt: 'socket.io',
+    experience: '1 years'
   },
   {
     id: 8,
     title: 'MySQL',
-    alt: 'mysql'
+    alt: 'mysql',
+    experience: '1 1/2 years'
   },
   {
     id: 9,
     title: 'React-Native',
-    alt: 'react-native'
+    alt: 'react-native',
+    experience: '1 1/2 years'
   },
   {
     id: 10,
     title: 'Cypress.js',
     img: null,
-    alt: 'cypress.js'
+    alt: 'cypress.js',
+    experience: '1 year'
   },
   {
     id: 11,
     title: 'Figma',
     img: null,
-    alt: 'figma'
+    alt: 'figma',
+    experience: '1 1/2 years'
   },
 ];
 
@@ -127,49 +150,57 @@ export const familiarServices = [
     id: 1,
     title: 'Docker',
     img: null,
-    alt: 'docker'
+    alt: 'docker',
+    experience: '1 year'
   },
   {
     id: 2,
     title: 'MobX',
     img: null,
-    alt: 'mobx'
+    alt: 'mobx',
+    experience: '1/2 year'
   },
   {
     id: 3,
     title: 'Circle-Ci',
     img: null,
-    alt: 'circle-ci'
+    alt: 'circle-ci',
+    experience: '1 year'
   },
   {
     id: 4,
     title: 'Puppeteer',
     img: null,
-    alt: 'puppeteer'
+    alt: 'puppeteer',
+    experience: 'Actively learning'
   },
   {
     id: 5,
     title: 'TailWindCSS',
     img: null,
-    alt: 'tail wind CSS'
+    alt: 'tail wind CSS',
+    experience: 'Actively learning'
   },
   {
     id: 6,
     title: 'Shopify',
     img: null,
-    alt: 'shopify'
+    alt: 'shopify',
+    experience: 'Actively learning'
   },
   {
     id: 7,
     title: 'ServiceNow',
     img: null,
-    alt: 'service now platform'
+    alt: 'service now platform',
+    experience: 'Actively learning'
   },
   {
     id: 8,
     title: 'The Open CLI Framework',
     img: null,
-    alt: 'The Open CLI Framework'
+    alt: 'The Open CLI Framework',
+    experience: '1 month'
   }
 ]
 

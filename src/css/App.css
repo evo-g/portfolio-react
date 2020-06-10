@@ -80,6 +80,9 @@ main {
 }
 
 .project-info {
+  padding: 5px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   width: 35rem;
@@ -91,9 +94,16 @@ main {
 
 .color-gr {
   text-decoration: none;
-  color: #49bf9d !important;
-  border-bottom: 1px dotted #49bf9d;
+  color: #49bf9d;
+  border: 1px dotted #49bf9d;
   width: 90px;
+  padding: 3px 7px;
+  border-radius: 10px;
+}
+
+.color-gr:hover {
+  color: #F5F5F5;
+  background-color: #49bf9d;
 }
 
 .project-info h3 {
@@ -118,9 +128,7 @@ main {
   margin: 1.5rem;
   flex: 1;
 }
-.project a:visited {
-  color: initial;
-}
+
 
 /*About*/
 
@@ -255,6 +263,22 @@ main {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .top-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .project {
+    display: flex;
+    max-width: 550px;
+  }
+  .column {
+    max-width: 275px;
+  }
+  .column img {
+    max-width: 270px;
+  }
+}
 /* 
 @media (min-width: 640px) {
   .top-nav {

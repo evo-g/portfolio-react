@@ -31,18 +31,18 @@
 
 .service-card {
   margin: 2rem;
-  background-color: #546E7A;
+  background-color: #01579B;
   color: #fff;
-  padding: 2rem 4rem;
+  padding: 1rem 5rem;
   border-radius: .3rem;
   box-shadow: 1px 1px 1px #212121;
 }
 
 .card-1 {
-  background-color: #4FC3F7;
+  background-color: #0288D1;
 }
 
 .card-2 {
-  background-color: #FFF176;
+  background-color: #29B6F6;
   color: #111111;
 }

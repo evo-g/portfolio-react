@@ -31,6 +31,7 @@ const NavWrapper = styled.nav`
 
   .top-nav li a:visited {
     color: initial;
+    color: #00a7e0;
   }
 
   a {
@@ -44,13 +45,13 @@ const NavWrapper = styled.nav`
   }
 
   .top-nav li a {
-    color: #00a7e0 !important;
+    color: #00a7e0;
+    padding: 8px 16px;
   }
   ul li a:hover {
     background: #444;
-    padding: 10px;
     border-radius: 3px;
-    transition: 0.3s ease all;
+
     white-space: nowrap;
 `
 
