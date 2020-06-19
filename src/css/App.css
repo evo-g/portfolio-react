@@ -76,7 +76,7 @@ main {
   text-align: center;
 }
 .tech-stack span {
-  color: #0288D1;
+  color: #01579B;
 }
 
 .project-info {
@@ -94,21 +94,22 @@ main {
 
 .color-gr {
   text-decoration: none;
-  color: #49bf9d;
-  border: 1px dotted #49bf9d;
+  color: #F5F5F5;
+  background-color: #49bf9d;
   width: 90px;
   padding: 3px 7px;
   border-radius: 10px;
 }
 
 .color-gr:hover {
-  color: #F5F5F5;
-  background-color: #49bf9d;
+  background-color: #F5F5F5;
+  color: #49bf9d;
+  border: .5px solid #49bf9d;
 }
 
 .project-info h3 {
   margin: 0 auto;
-  color:  #49bf9d;
+  color:  #01579B;
   font-weight: 600;
   text-transform: lowercase;
 }

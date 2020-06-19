@@ -10,7 +10,7 @@ const HomeWrapper = styled.section`
     margin-left: 5px;
   }
   h2 {
-    color: #40C4FF;
+    color: #212121;
     width: 725px;
     padding: .7rem;
     margin-left: 18px;
