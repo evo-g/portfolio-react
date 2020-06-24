@@ -21,6 +21,10 @@ const FooterWrapper = styled.footer`
     width: 3.5rem;
     margin: 1rem;
   }
+  .column-break {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Footer = () => {
@@ -44,7 +48,10 @@ const Footer = () => {
       </section>
       <FooterWrapper>
           <a href='/'><img src={require('../../../images/profile.jpg')} alt='my avatar' /></a>
-          <span>My Portfolio<br />&copy; 2018</span>
+          <div className='column-break'>
+            <span>My Portfolio</span>
+            <span>&copy; 2018</span>
+          </div>
       </FooterWrapper>
     </React.Fragment>
   )

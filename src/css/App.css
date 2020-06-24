@@ -204,6 +204,25 @@ main {
   display: block;
 }
 
+/* default page */
+.default {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.default a:visited {
+  color: initial;
+  color: #00a7e0;
+}
+
+.default img {
+  object-fit: cover;
+  width: 25rem;
+  margin: 5rem;
+}
+
 /* desktop nav */
 .desk-nav {
   text-transform: uppercase;

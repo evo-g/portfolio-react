@@ -18,7 +18,7 @@ import '../css/App.css';
 export default () => (
   <Router>
     <Navbar />
-    <div className='container mx-auto'>
+    <div className='container'>
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/about' component={AboutPage} />
