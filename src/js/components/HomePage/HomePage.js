@@ -13,7 +13,8 @@ const HomeWrapper = styled.section`
     color: #212121;
     width: 725px;
     padding: .7rem;
-    margin-left: 18px;
+    margin: 0 auto;
+    width: fit-content;
   }
 `;
 
@@ -26,33 +27,32 @@ function HomePage() {
   // };
 
 
-  useEffect(()=> {
+  useEffect(() => {
     setLoader(false);
   }, []);
+
+  // 
 
   return (
     <HomeWrapper>
       {/* <button onClick={() => setDark(prevDark => !prevDark)}> Change Theme</button> */}
+      <h2>Projects</h2>
       <div className="row">
-        <h2>Projects</h2>
         {
           projects.map(project => (
             <div className="project" key={project.id}>
-              <div className='column'>
-                {loader ? <div id='loader'></div> : <a className='a-column' href={project.href} target='blank' alt={project.alt}><img src={project.img} alt={project.alt} /></a>}
-                <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
-              </div>
-
+              <h3>{project.title}</h3>
+              {loader ? <div id='loader'></div> : <a className='a-column' href={project.href} target='blank' alt={project.alt}><img src={project.img} alt={project.alt} /></a>}
+              <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
               <div className='project-info'>
-                <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                <a className='color-gr' href={project.href} target='blank' alt={project.alt}>Check it out</a>
               </div>
+              <a className='color-gr' href={project.href} target='blank' alt={project.alt}>Check it out</a>
             </div>
           ))
         }
-        <h2>More Coming Soon</h2>
       </div>
+      <h2>More Coming Soon</h2>
     </HomeWrapper>
   )
 }

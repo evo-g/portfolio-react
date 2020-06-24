@@ -31,36 +31,26 @@ main {
 /* site-section */
 
 .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 3rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 .row h2 {
   font-size: 22px;
   margin-bottom: 5px;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 1.5rem;
-}
-
 /* Projects */
 
 .project {
-  display: flex;
-  flex-direction: row;
-  width: 70rem;
-  height: 40rem;
   background-color: #fafafa;
-  padding: .5rem;
-  margin: 18px;
+  padding: 1rem;
+  margin: 10px;
   border-radius: 8px;
   align-items: center;
   box-shadow: 1px 1px 1px #F5F5F5;
+  position: relative;
 }
 
 .project:hover {
@@ -69,9 +59,9 @@ main {
   box-shadow: 1px 1px 1px #BDBDBD;
   transform: scale(1.01);
 }
-/* finish integrating tech stack here and on data */
+
 .tech-stack {
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 1rem;
   text-align: center;
 }
@@ -81,34 +71,35 @@ main {
 
 .project-info {
   padding: 5px;
-  background-color: #F5F5F5;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  width: 35rem;
   max-height: 34rem;
-  overflow-y: auto;
-  overflow-x: hidden;
-  margin: 1.5rem 1.5rem 1.5rem 2rem;
+  margin: 1.5rem auto;
 }
 
 .color-gr {
   text-decoration: none;
   color: #F5F5F5;
   background-color: #49bf9d;
-  width: 90px;
-  padding: 3px 7px;
+  padding: 6px 8px;
   border-radius: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .color-gr:hover {
   background-color: #F5F5F5;
   color: #49bf9d;
-  border: .5px solid #49bf9d;
+  border: .1px solid #49bf9d;
 }
 
-.project-info h3 {
-  margin: 0 auto;
+.project h3 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0 0 0 1rem;
   color:  #01579B;
   font-weight: 600;
   text-transform: lowercase;
@@ -117,19 +108,19 @@ main {
 .project-info p {
   color: #616161;
   word-wrap: break-word;
-  padding: 0.2rem;
-  margin-bottom: 7px;
+  margin: 0 0 5rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .project img {
   object-fit: cover;
   display: block;
-  width: 38rem;
+  width: min(100%, 35rem);
   border-radius: 10px;
-  margin: 1.5rem;
+  margin: 5rem auto 0;
   flex: 1;
 }
-
 
 /*About*/
 
@@ -142,16 +133,14 @@ main {
   font-weight: 300;
   color: #777;
 }
-/* work on p for everything and about # or class not sure */
+
 #about h3 {
   background-color: #ECF0F1;
   background-image: none;
-
   color: #40C4FF;
   width: 725px;
   padding: .5rem;
 }
-
 
 .about p {
   padding: 10px;
@@ -179,12 +168,12 @@ main {
 }
 
 /* connect */
+
 .connect {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
 
 .taller {
   display: flex;
@@ -201,7 +190,6 @@ main {
   color: #777;
   display: flex;
   justify-content: center;
-
 }
 
 .center-form {
@@ -213,8 +201,70 @@ main {
   background-color: #ECF0F1; 
 }
 
- /* nav toggle fix later */
- .navbar-toggle {
+.active {
+  display: block;
+}
+
+/* desktop nav */
+.desk-nav {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+  justify-content: space-evenly;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  z-index: 999;
+}
+
+.desk-nav li {
+  font-size: 1.1em;
+  min-height: 50px;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+.desk-nav li a:visited {
+  color: initial;
+  color: #00a7e0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.desk-nav li {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.desk-nav li a {
+  color: #00a7e0;
+  padding: 8px 16px;
+}
+ul li a:hover {
+  background: #444;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* mobile nav helpers */
+
+.navbar-toggle {
+  transition: ease;
+}
+
+.fas {
   position: absolute;
   top: 2.5rem;
   right: 2rem;
@@ -222,26 +272,8 @@ main {
   color: #00a7e0;
   font-size: 24px;
   display: none;
+  z-index: 99;
 }
-
-.active {
-  display: block;
-}
-
-/* mobile  */
-
-
-
-/* @media (min-width: 640px) {
-  .top-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-} */
-
 
 /* loader */
 #loader {
@@ -264,98 +296,60 @@ main {
   }
 }
 
+/* figure out the toggle with state and make a function to display stuff think vstda */
 @media screen and (max-width: 700px) {
+  .fas {
+    display: block;
+  }
+  .desk-nav {
+    height: 65px;
+  }
+  .desk-nav li  {
+    display: none;
+  }
   .top-nav {
     display: flex;
     flex-direction: column;
-  }
-  .project {
-    display: flex;
-    max-width: 550px;
-  }
-  .column {
-    max-width: 275px;
-  }
-  .column img {
-    max-width: 270px;
-  }
-}
-/* 
-@media (min-width: 640px) {
-  .top-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 10px;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+    z-index: 999;
   }
-  #services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .services {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  .services ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-} */
-
-/* Navbar  */
-
-/* .top-nav {
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 1rem;
-  list-style-type: none;
-  justify-content: space-evenly;
-  background:
-  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-  background-color: #131313;
-  background-size: 20px 20px;
-}
-
-.top-nav li {
+  .top-nav li {
   font-size: 1.1em;
   min-height: 50px;
-  padding: 1rem;
+  padding: .5rem;
   text-decoration: none;
+  }
+  .top-nav li {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .top-nav li a {
+    text-decoration: none;
+    color: #00a7e0;
+    padding: 8px 16px;
+  }
+  .top-nav li a:visited {
+    color: initial;
+    color: #00a7e0;
+  }
+  ul li a:hover {
+    background: #444;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .project {
+    margin: 5px;
+  }
 }
-
-.top-nav li a:visited {
-  color: initial;
-}
-
-a {
-  text-decoration: none;
-}
-
-.top-nav li {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-}
-
-.top-nav li a {
-  color: #00a7e0 !important;
-}
-ul li a:hover {
-  background: #444;
-  padding: 10px;
-  border-radius: 3px;
-  transition: 0.3s ease all;
-  white-space: nowrap;
-} */
