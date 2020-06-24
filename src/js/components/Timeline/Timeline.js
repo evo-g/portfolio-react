@@ -8,6 +8,7 @@ const TimelineItem = ({ data }) => (
       <span className="tag" style={{ background: data.category.color }}>
         {data.category.tag}
       </span>
+      <br />
       <time>{data.date}</time>
       <p>{data.text}</p>
       <p>{data.info}</p>
