@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import Welcome from '../WelcomePage';
 import { projects } from '../../data';
 import styled from 'styled-components';
 
@@ -10,8 +11,7 @@ const HomeWrapper = styled.section`
     margin-left: 5px;
   }
   h2 {
-    color: #212121;
-    width: 725px;
+    color: #2E7D32;
     padding: .7rem;
     margin: 0 auto;
     width: fit-content;
@@ -36,6 +36,7 @@ function HomePage() {
   return (
     <HomeWrapper>
       {/* <button onClick={() => setDark(prevDark => !prevDark)}> Change Theme</button> */}
+      <Welcome />
       <h2>Projects</h2>
       <div className="row">
         {
