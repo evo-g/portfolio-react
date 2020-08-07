@@ -277,6 +277,15 @@ export const projects = [
     description: 'A quiz app that uses no framework only HTML,CSS,JS. It does a fetch call to Open Trivia Database for random questions. Uses local storage to save the top 5 high scores. Has a simple Express server.',
     stack: 'HTML, CSS, JavaScript, Open Trivia DB API, Local Storage, Express.js'
   },
+  {
+    id: 9,
+    title: 'Tip App',
+    alt: 'tip app',
+    img: require('../images/thumbs/tip-guide.png'),
+    href: 'https://stoic-tereshkova-3bc590.netlify.app/',
+    description: 'An app to help calculate your tip for any needed reason. Made with vanilla JS, and parcel.js serve it',
+    stack: 'HTML, CSS, JavaScript, Parcel.js'
+  },
 ];
 
 export const timelineData = [

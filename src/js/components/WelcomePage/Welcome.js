@@ -12,7 +12,7 @@ const Welcome = () => {
         brings along serveral years of experience as an automotive mechanic. You can check out some projects below,
         or click on the link to find out more about my journey.
       </p>
-      <Link to='about'>Learn More</Link>
+      <Link to='/about'>Learn More</Link>
     </div>
   )
 };

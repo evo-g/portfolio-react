@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   width: 100%;
   background-color: #E0E0E0;
+  
 }
 
 main {
@@ -372,3 +373,5 @@ ul li a:hover {
     margin: 5px;
   }
 }
+
+/* fix smaller screen sizes iphone 5 */
