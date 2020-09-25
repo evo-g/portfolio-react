@@ -283,7 +283,16 @@ export const projects = [
     alt: 'tip app',
     img: require('../images/thumbs/tip-guide.png'),
     href: 'https://stoic-tereshkova-3bc590.netlify.app/',
-    description: 'An app to help calculate your tip for any needed reason. Made with vanilla JS, and parcel.js serve it',
+    description: 'An app to help calculate your tip for any needed reason. Made with vanilla JS, and parcel.js to serve it.',
+    stack: 'HTML, CSS, JavaScript, Parcel.js'
+  },
+  {
+    id: 10,
+    title: 'Cash Tracking App',
+    alt: 'cash tracking app',
+    img: require('../images/thumbs/cash-tracker.png'),
+    href: 'https://stoic-tereshkova-3bc590.netlify.app/',
+    description: "An app to help calculate your cash for any needed reason. Was a real need for myself and family members when we make bank deposits for my family's small business. Made with vanilla JS, and parcel.js to serve it.",
     stack: 'HTML, CSS, JavaScript, Parcel.js'
   },
 ];
