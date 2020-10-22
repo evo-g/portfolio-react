@@ -291,7 +291,7 @@ export const projects = [
     title: 'Cash Tracking App',
     alt: 'cash tracking app',
     img: require('../images/thumbs/cash-tracker.png'),
-    href: 'https://stoic-tereshkova-3bc590.netlify.app/',
+    href: 'https://reverent-shannon-32fd8c.netlify.app/',
     description: "An app to help calculate your cash for any needed reason. Was a real need for myself and family members when we make bank deposits for my family's small business. Made with vanilla JS, and parcel.js to serve it.",
     stack: 'HTML, CSS, JavaScript, Parcel.js'
   },
