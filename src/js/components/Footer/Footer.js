@@ -29,7 +29,7 @@ const FooterWrapper = styled.footer`
 
 const Footer = () => {
   return (
-    <React.Fragment>
+    <>
       <section className='connect'>
         <div className='end'>
           <h2>Get in Touch With Me</h2>
@@ -53,7 +53,7 @@ const Footer = () => {
             <span>&copy; 2018</span>
           </div>
       </FooterWrapper>
-    </React.Fragment>
+    </>
   )
 }
 

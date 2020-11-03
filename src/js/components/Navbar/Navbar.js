@@ -17,7 +17,7 @@ function Navbar() {
     <header ref={node}>
       <nav>
         {!open ?
-          <React.Fragment>
+          <>
             <span className='navbar-toggle' open={open} onClick={toggleOpen}>
               <i className="fas fa-bars"></i>
             </span>
@@ -38,9 +38,9 @@ function Navbar() {
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
-          </React.Fragment>
+          </>
           :
-          <React.Fragment>
+          <>
             <span className='navbar-toggle' open={open} onClick={toggleOpen}>
               <i className="fas fa-bars"></i>
             </span>
@@ -61,7 +61,7 @@ function Navbar() {
                 <Link to="/contact" open={open} onClick={toggleOpen}>Contact</Link>
               </li>
             </ul>
-          </React.Fragment>
+          </>
         }
       </nav>
     </header>
