@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel ./public/index.html",
-    "build": "parcel build ./public/index.html/",
+    "build": "parcel build ./public/index.html/ && cp public/_redirects dist/_redirects",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
@@ -15,12 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "src": "^1.1.2",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
