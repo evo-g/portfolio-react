@@ -39,8 +39,8 @@
   align-items: flex-end;
   padding: 15px;
   position: relative;
-  width: 400px;
-  max-width: 70%;
+  width: 475px;
+  max-width: 85%;
   text-align: right;
 }
 
@@ -94,7 +94,8 @@
   font-size: 16px;
   line-height: 24px;
   margin: 15px 0;
-  max-width: 250px;
+  width: 450px;
+  max-width: 95%;
 }
 
 .timeline-item-content a {

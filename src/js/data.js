@@ -370,7 +370,7 @@ export const timelineData = [
       url: null,
       text: null
     },
-    info: 'The role was part time. I helped with the UI in the inital stages of the startup.',
+    info: 'The role was part time. I helped with the UI in the inital stages of the startup. Worked mostly on the front end setting up the UI of the dashboard for various pages. Technologies used for the front end are React, MaterialUi, and Mobx for state management. ',
     technologies: 'React.js, MongoDB, Node.js, Mongoose, Express, MobX, Docker, Kubernetes'
   },
   {
@@ -388,5 +388,21 @@ export const timelineData = [
     },
     info: 'The intership was full time. I learned a lot durning the month. I had to overcome a lot of obstacles with socket.io, and learn the code base quickly.',
     technologies: 'React.js, Redux, Loopback, Socket.io, Cypress, SCSS'
+  },
+  {
+    id: 7,
+    text: 'NxtRobotics',
+    date: 'November 2020 to current',
+    category: {
+      tag: 'Tech Industry',
+      color: '#81D4FA',
+      study: 'Software Engineer'
+    },
+    link: {
+      url: 'https://www.nxtrobotics.com/',
+      text: 'Contract work'
+    },
+    info: 'Was tasked to refactor parts or their dashboard, and creating new pages including the backend mock data. The project is using Docker which is something I had to refresh on. I learn some new skills, including Laravel, creating controllers, requests, error codes, routes, creating seeders, and everything that goes to getting data to the front-end. On the front end worked with React.js to pull in that data and shape it using Ant Design to make it look nice and uniform across the site.',
+    technologies: 'React.js, Redux, Redux Saga, Laravel, Docker, AntD'
   },
 ];
