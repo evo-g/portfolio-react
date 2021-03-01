@@ -3,6 +3,9 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 62.5%;
 }
+*, *::after, *::before {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0 auto;
@@ -44,7 +47,7 @@ main {
 
 /* Projects */
 
-.project {
+/* .project {
   background-color: #fafafa;
   padding: 1rem;
   margin: 10px;
@@ -121,7 +124,7 @@ main {
   border-radius: 10px;
   margin: 5rem auto 0;
   flex: 1;
-}
+} */
 
 /*About*/
 

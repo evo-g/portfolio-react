@@ -263,8 +263,8 @@ export const projects = [
     id: 7,
     title: 'Cruz Performance',
     alt: 'cruz performance',
-    img: require('../images/thumbs/Cruz-Perfromance-thumb.png'),
-    href: 'https://unruffled-einstein-bea7be.netlify.app/',
+    img: require('../images/thumbs/cruz-performance-lt.png'),
+    href: 'https://cruzperformance.biz/',
     description: 'A small site created for a friends business. Got to use React hooks to create a burger menu to navigate around the different pages. Also set up links to direct a call or text the business.',
     stack: 'React, React Hooks, Styled-Components, CSS, Parcel.js'
   },
@@ -281,7 +281,7 @@ export const projects = [
     id: 9,
     title: 'Tip App',
     alt: 'tip app',
-    img: require('../images/thumbs/tip-guide.png'),
+    img: require('../images/thumbs/laptop-tip-guide.png'),
     href: 'https://stoic-tereshkova-3bc590.netlify.app/',
     description: 'An app to help calculate your tip for any needed reason. Made with vanilla JS, and parcel.js to serve it.',
     stack: 'HTML, CSS, JavaScript, Parcel.js'
@@ -402,7 +402,7 @@ export const timelineData = [
       url: 'https://www.nxtrobotics.com/',
       text: 'Contract work'
     },
-    info: 'Was tasked to refactor parts or their dashboard, and creating new pages including the backend mock data. The project is using Docker which is something I had to refresh on. I learn some new skills, including Laravel, creating controllers, requests, error codes, routes, creating seeders, and everything that goes to getting data to the front-end. On the front end worked with React.js to pull in that data and shape it using Ant Design to make it look nice and uniform across the site.',
+    info: 'Was tasked to refactor parts or their dashboard, and creating new pages which includes the backend. The project is using Docker which is something I had to refresh on. I am learning some new skills, including Laravel, creating controllers, requests, error codes, routes, creating seeders, and everything that goes to getting backend data to the front-end. On the front end worked with React.js to pull in that data and shape it using Ant Design to make it look nice and uniform across the site.',
     technologies: 'React.js, Redux, Redux Saga, Laravel, Docker, AntD'
   },
 ];

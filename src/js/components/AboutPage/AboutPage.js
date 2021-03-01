@@ -1,9 +1,6 @@
 import React from 'react';
 import Timeline from '../Timeline';
 
-
-
-
 const AboutPage = () => {
   return (
     <div id="about" className="section-header about">

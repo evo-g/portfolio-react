@@ -49,6 +49,6 @@ strong {
 }
 
 .card a:hover {
-  background-color: #F5F5F5;
-  color: #03A9F4;
+  opacity: 0.5;
+  transition: 0.1s ease all;
 }
