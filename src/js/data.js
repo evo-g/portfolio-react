@@ -218,7 +218,7 @@ export const projects = [
     id: 2,
     title: 'Movie Finder',
     alt: 'hackathon Movie Finder',
-    img: require('../images/thumbs/hackathon-thumb.jpg'),
+    img: require('../images/thumbs/hackathon-lt.png'),
     href: 'https://awesome-morse-9400db.netlify.app/',
     description: 'A search engine for movies, makes two different API calls to find more details on the movie you search. Was made for a school project called Hackathon, in which we have 72 hours to make a Reactjs project from scratch. Uses bootstrap and css for styling and has 2 API calls.',
     stack: 'React, CSS, Bootstrap, Axios, OMDB API'
@@ -290,8 +290,8 @@ export const projects = [
     id: 10,
     title: 'Cash Tracking App',
     alt: 'cash tracking app',
-    img: require('../images/thumbs/cash-tracker.png'),
-    href: 'https://reverent-shannon-32fd8c.netlify.app/',
+    img: require('../images/thumbs/cash-tracking-lt.png'),
+    href: 'https://cash-tracking-app.netlify.app/',
     description: "An app to help calculate your cash for any needed reason. Was a real need for myself and family members when we make bank deposits for my family's small business. Made with vanilla JS, and parcel.js to serve it.",
     stack: 'HTML, CSS, JavaScript, Parcel.js'
   },

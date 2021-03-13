@@ -19,9 +19,9 @@ function Navbar() {
         {!open ?
           <>
             <span className='navbar-toggle' open={open} onClick={toggleOpen}>
-              <i className="fas fa-bars"></i>
+              <i className='fas fa-bars'></i>
             </span>
-            <ul className="desk-nav">
+            <ul className='desk-nav'>
               <li>
                 <Link to='/'>Home</Link>
               </li>
@@ -29,22 +29,22 @@ function Navbar() {
                 <Link to='/about'>About</Link>
               </li>
               <li>
-                <Link to="/services">Services</Link>
+                <Link to='/services'>Services</Link>
               </li>
               <li>
-                <a href="https://tinyurl.com/y7wt8w4r" target="blank">Resume</a>
+                <a href='https://tinyurl.com/y7wt8w4r' target='_blank' rel='noopener'>Resume</a>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </>
           :
           <>
             <span className='navbar-toggle' open={open} onClick={toggleOpen}>
-              <i className="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
             </span>
-            <ul className="top-nav">
+            <ul className='top-nav'>
               <li>
                 <Link to='/' open={open} onClick={toggleOpen}>Home</Link>
               </li>
@@ -52,13 +52,13 @@ function Navbar() {
                 <Link to='/about' open={open} onClick={toggleOpen}>About</Link>
               </li>
               <li>
-                <Link to="/services" open={open} onClick={toggleOpen}>Services</Link>
+                <Link to='/services' open={open} onClick={toggleOpen}>Services</Link>
               </li>
               <li>
-                <a href="https://tinyurl.com/y7wt8w4r" target="blank" open={open} onClick={toggleOpen}>Resume</a>
+                <a href='https://tinyurl.com/y7wt8w4r' target='blank' open={open} onClick={toggleOpen}>Resume</a>
               </li>
               <li>
-                <Link to="/contact" open={open} onClick={toggleOpen}>Contact</Link>
+                <Link to='/contact' open={open} onClick={toggleOpen}>Contact</Link>
               </li>
             </ul>
           </>

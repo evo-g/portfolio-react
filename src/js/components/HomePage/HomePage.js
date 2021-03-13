@@ -19,17 +19,17 @@ function HomePage() {
     <HomeWrapper>
       <Welcome />
       <h2>Projects</h2>
-      <div className="row">
+      <div className='row'>
         {
           projects.map(project => (
-            <div className="project" key={project.id}>
+            <div className='project' key={project.id}>
               <h3>{project.title}</h3>
               {
                 loader ?
                   <Loading />
                   :
                   <>
-                    <a className='a-column' href={project.href} target='blank' alt={project.alt}>
+                    <a className='a-column' href={project.href} target='_blank' rel='noopener' alt={project.alt}>
                       <img src={project.img} alt={project.alt} />
                     </a>
                     <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
@@ -38,7 +38,7 @@ function HomePage() {
                         <summary>More info</summary>
                         <p>{project.description}</p>
                       </details>
-                    <a className='color-gr' href={project.href} target='blank' alt={project.alt}>Check it out</a>
+                    <a className='color-gr' href={project.href} target='_blank' rel='noopener' alt={project.alt}>Check it out</a>
                     </div>
                   </>
               }

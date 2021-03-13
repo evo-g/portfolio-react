@@ -215,12 +215,3 @@ header {
   display: flex;
   align-items: baseline;
 }
-
-/* @media (max-width: 779px) {
-  .top-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-} */

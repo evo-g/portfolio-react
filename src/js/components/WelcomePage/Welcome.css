@@ -19,8 +19,7 @@
 }
 
 .card p {
-  color: #6D4C41;
-  /* font-size: clamp(1rem, 10vw, 2.1rem);  */
+  color: #373736;
   width: 85vw;
   padding: 1rem;
   text-align: center;

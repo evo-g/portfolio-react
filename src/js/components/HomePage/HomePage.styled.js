@@ -8,7 +8,7 @@ export const HomeWrapper = styled.section`
     margin-left: 5px;
   }
   h2 {
-    color: #2E7D32;
+    color: #0024aa;
     padding: .7rem;
     margin: 0 auto;
     width: fit-content;
@@ -47,7 +47,7 @@ export const HomeWrapper = styled.section`
   .color-gr {
     text-decoration: none;
     color: #F5F5F5;
-    background-color: #49bf9d;
+    background-color: #21B3AA;
     padding: 6px 8px;
     border-radius: 10px;
     position: absolute;
