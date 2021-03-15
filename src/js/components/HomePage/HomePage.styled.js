@@ -1,13 +1,22 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.section`
-  background-color: #CFD8DC;
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(top left, #A6BDB9, #FFFFFF);
+  background: -moz-linear-gradient(top left,  #A6BDB9, #FFFFFF);
+  background: linear-gradient(to bottom right,  #A6BDB9, #FFFFFF);
   button {
     color: #00a7e0;
     padding: 2px 4px;
     margin-left: 5px;
   }
   h2 {
+    color: #FFF;
+    padding: .7rem;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  h3 {
     color: #0024aa;
     padding: .7rem;
     margin: 0 auto;
@@ -23,7 +32,7 @@ export const HomeWrapper = styled.section`
     position: relative;
   }
   .project:hover {
-    background-color: #E0E0E0;
+    background-color: #FFF;
     transition: 0.1s ease all;
     box-shadow: 1px 1px 1px #BDBDBD;
     transform: scale(1.01);

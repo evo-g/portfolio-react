@@ -39,19 +39,28 @@ const ServicePage = () => {
   return (
     <section id='services'>
       <div className='services'>
-        <h2>Core Technologies</h2>
-        <ul>{mainTech}</ul>
+      <h2>Core Technologies</h2>
+      <ul>{mainTech}</ul>
       </div>
       <div className='services'>
-        <h2>Comfortable working with</h2>
-        <ul>{mediumTech}</ul>
+      <h2>Comfortable working with</h2>
+      <ul>{mediumTech}</ul>
       </div>
       <div className='services'>
-        <h2>Familiar Technologies and Expoloring</h2>
-        <ul>{familiarTech}</ul>
+      <h2>Familiar Technologies and Expoloring</h2>
+      <ul>{familiarTech}</ul>
       </div>
     </section>
   )
 }
 
 export default ServicePage;
+
+
+{/* <div className=''>
+  <i className="fab fa-html5"></i>
+  <i className="fab fa-css3-alt"></i>
+  <i className="fab fa-js"></i>
+  <i className="fab fa-node"></i>
+  <i className="fab fa-react"></i>
+</div> */}

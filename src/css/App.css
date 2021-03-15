@@ -48,7 +48,10 @@ main {
 /*About*/
 
 #about {
-  background: #ECF0F1;
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(top left, #FFFFFF, #A6BDB9);
+  background: -moz-linear-gradient(top left, #FFFFFF, #A6BDB9);
+  background: linear-gradient(to bottom right, #FFFFFF, #A6BDB9);
   margin: 0 0 2rem;
   padding: 0;
   line-height: 30px;
@@ -63,7 +66,7 @@ main {
 }
 
 .about-intro h3 {
-  background-color: #ECF0F1;
+  background-color: inherit;
   text-align: center;
   color: #0024aa;
   padding: .5rem;

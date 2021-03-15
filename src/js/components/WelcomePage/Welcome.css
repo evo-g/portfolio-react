@@ -2,9 +2,8 @@
   display: flex;
   margin: 3rem auto 2rem;
   padding: 1rem;
-  color:  #000000;
+  color:  inherit;
   font-weight: 400;
-  font-family: Source Sans Pro,Helvetica,sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -26,7 +25,7 @@
 }
 
 strong {
-  color: #0091EA;
+  color: #FFF;
 }
 
 .card img {

@@ -46,7 +46,7 @@ function HomePage() {
           ))
         }
       </div>
-      <h2>More Coming Soon</h2>
+      <h3>More Coming Soon</h3>
     </HomeWrapper>
   )
 }

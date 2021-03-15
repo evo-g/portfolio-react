@@ -4,25 +4,25 @@ export const mainTechnologies = [
     id: 1,
     title: 'JavaScript',
     alt: 'javaScript',
-    experience: '2 years'
+    experience: '3 years'
   },
   {
     id: 2,
     title: 'CSS',
     alt: 'css',
-    experience: '2 years'
+    experience: '3 years'
   },
   {
     id: 3,
     title: 'HTML',
     alt: 'html',
-    experience: '2 years'
+    experience: '3 years'
   },
   {
     id: 4,
     title: 'React.js',
     alt: 'reactjs',
-    experience: '2 years'
+    experience: '3 years'
   },
   {
     id: 5,
@@ -265,7 +265,7 @@ export const projects = [
     alt: 'cruz performance',
     img: require('../images/thumbs/cruz-performance-lt.png'),
     href: 'https://cruzperformance.biz/',
-    description: 'A small site created for a friends business. Got to use React hooks to create a burger menu to navigate around the different pages. Also set up links to direct a call or text the business.',
+    description: 'A site created for a friends business. Got to use React hooks to create a burger menu to navigate around the different pages. Also set up links to direct a call or text to the business.',
     stack: 'React, React Hooks, Styled-Components, CSS, Parcel.js'
   },
   {
@@ -304,7 +304,7 @@ export const timelineData = [
     date: 'January 2008 to October 2008',
     category: {
       tag: 'Education',
-      color: '#FFF59D',
+      color: '#e21b1b',
       study: 'Automotive Technology'
     },
     link: {
@@ -333,7 +333,7 @@ export const timelineData = [
     date: 'Summer 2011 to June 2016',
     category: {
       tag: 'Education',
-      color: '#FFF59D',
+      color: '#e21b1b',
       study: 'A.S. Business Administration & A.S. Business Technology'
     },
     link: {
@@ -348,7 +348,7 @@ export const timelineData = [
     date: 'January 2018 to August 2018',
     category: {
       tag: 'Education',
-      color: '#FFF59D',
+      color: '#e21b1b',
       study: 'Full Stack Software Development (MERN)'
     },
     link: {
@@ -367,8 +367,8 @@ export const timelineData = [
       study: 'Software Engineer Internship'
     },
     link: {
-      url: null,
-      text: null
+      url: 'https://www.linkedin.com/in/evo/',
+      text: 'ask for more info'
     },
     info: 'The role was part time. I helped with the UI in the inital stages of the startup. Worked mostly on the front end setting up the UI of the dashboard for various pages. Technologies used for the front end are React, MaterialUi, and Mobx for state management. ',
     technologies: 'React.js, MongoDB, Node.js, Mongoose, Express, MobX, Docker, Kubernetes'
@@ -383,8 +383,8 @@ export const timelineData = [
       study: 'Software Developer Internship'
     },
     link: {
-      url: null,
-      text: null
+      url: 'https://www.linkedin.com/in/evo/',
+      text: 'ask for more info'
     },
     info: 'The intership was full time. I learned a lot durning the month. I had to overcome a lot of obstacles with socket.io, and learn the code base quickly.',
     technologies: 'React.js, Redux, Loopback, Socket.io, Cypress, SCSS'
