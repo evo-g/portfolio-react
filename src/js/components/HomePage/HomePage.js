@@ -23,7 +23,10 @@ function HomePage() {
         {
           projects.map(project => (
             <div className='project' key={project.id}>
-              <h3>{project.title}</h3>
+                    <div className='info-container'>
+                      <h3>{project.title}</h3>
+                      <a className='color-gr' href={project.href} target='_blank' rel='noopener' alt={project.alt}>Check it out</a>
+                    </div>
               {
                 loader ?
                   <Loading />
@@ -34,11 +37,7 @@ function HomePage() {
                     </a>
                     <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
                     <div className='project-info'>
-                      <details>
-                        <summary>More info</summary>
-                        <p>{project.description}</p>
-                      </details>
-                    <a className='color-gr' href={project.href} target='_blank' rel='noopener' alt={project.alt}>Check it out</a>
+                      <p>{project.description}</p>
                     </div>
                   </>
               }

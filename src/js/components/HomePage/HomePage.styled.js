@@ -5,31 +5,25 @@ export const HomeWrapper = styled.section`
   background: -webkit-linear-gradient(top left, #A6BDB9, #FFFFFF);
   background: -moz-linear-gradient(top left,  #A6BDB9, #FFFFFF);
   background: linear-gradient(to bottom right,  #A6BDB9, #FFFFFF);
-  button {
-    color: #00a7e0;
-    padding: 2px 4px;
-    margin-left: 5px;
-  }
   h2 {
     color: #FFF;
     padding: .7rem;
     margin: 0 auto;
-    width: fit-content;
+    text-align: center;
   }
   h3 {
     color: #0024aa;
     padding: .7rem;
     margin: 0 auto;
-    width: fit-content;
+    text-align: center;
   }
   .project {
     background-color: #fafafa;
     padding: 1rem;
-    margin: 10px;
+    margin: .5rem;
     border-radius: 8px;
     align-items: center;
     box-shadow: 1px 1px 1px #F5F5F5;
-    position: relative;
   }
   .project:hover {
     background-color: #FFF;
@@ -38,39 +32,41 @@ export const HomeWrapper = styled.section`
     transform: scale(1.01);
   }
   .tech-stack {
-    margin: 1rem 0;
+    margin: 0;
     padding: 1rem;
     text-align: center;
   }
   .tech-stack span {
     color: #01579B;
+    font-weight: 500;
   }
   .project-info {
-    padding: 5px;
+    padding: .5rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    max-height: 34rem;
+    max-height: 12rem;
     margin: 1.5rem auto;
+    overflow-y: auto;
+    
+  }
+  .info-container {
+    display: flex;
+    justify-content: space-between;
   }
   .color-gr {
     text-decoration: none;
     color: #F5F5F5;
     background-color: #21B3AA;
-    padding: 6px 8px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    padding: 10px 8px;
+    border-radius: 8px;
+    text-align: center;
   }
   .color-gr:hover {
     opacity: 0.5;
     transition: 0.1s ease all;
   }
   .project h3 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     margin: 0 0 0 1rem;
     color:  #01579B;
     font-weight: 600;
@@ -79,7 +75,7 @@ export const HomeWrapper = styled.section`
   .project-info p {
     color: #616161;
     word-wrap: break-word;
-    margin: 0 0 5rem;
+    margin: 0 0 1rem;
     padding: 1rem;
     text-align: center;
   }
@@ -87,12 +83,7 @@ export const HomeWrapper = styled.section`
     object-fit: cover;
     display: block;
     width: min(100%, 35rem);
-    border-radius: 10px;
-    margin: 5rem auto 0;
-    flex: 1;
-  }
-  summary {
-    outline: none;
-    transition: 0.3s ease all;
+    border-radius: 8px;
+    margin: 2rem auto 0;
   }
 `;
