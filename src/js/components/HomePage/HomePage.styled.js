@@ -57,7 +57,7 @@ export const HomeWrapper = styled.section`
   .color-gr {
     text-decoration: none;
     color: #F5F5F5;
-    background-color: #21B3AA;
+    background-color: #6ac7c2;
     padding: 10px 8px;
     border-radius: 8px;
     text-align: center;
@@ -70,7 +70,9 @@ export const HomeWrapper = styled.section`
     margin: 0 0 0 1rem;
     color:  #01579B;
     font-weight: 600;
-    text-transform: lowercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .project-info p {
     color: #616161;

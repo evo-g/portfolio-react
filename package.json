@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./public/index.html",
+    "dev": "parcel ./public/index.html",
     "build": "parcel build ./public/index.html/ && cp public/_redirects dist/_redirects",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
@@ -14,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@apollo/client": "^3.3.12",
+    "graphql": "^15.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -22,6 +25,6 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.5"
   }
 }

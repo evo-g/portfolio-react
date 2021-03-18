@@ -41,7 +41,7 @@ strong {
   text-decoration: none;
   color: #F5F5F5;
   background-color: #0288D1;
-  padding: 6px 8px;
+  padding: 10px 8px;
   border-radius: 10px;
   transition: background-color .2s ease-in-out,color .2s ease-in-out,border-color .2s ease-in-out;
 }
