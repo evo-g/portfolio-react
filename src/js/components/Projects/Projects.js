@@ -12,7 +12,6 @@ function Projects() {
     }
   );
 
-  console.log({projects});
   if (loading) {
     return <Loading />;
   }
@@ -28,7 +27,7 @@ function Projects() {
             </div>
             <>
               <a className='a-column' href={project?.href} target='_blank' rel='noopener' alt={project.name}>
-                <img src={project.image?.url} alt={project.alt} />
+                <img src={project.image?.url} alt={project.name} />
               </a>
               <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
               <div className='project-info'>
