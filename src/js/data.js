@@ -204,98 +204,98 @@ export const familiarServices = [
   }
 ]
 
-export const projects = [
-  {
-    id: 1,
-    title: 'e-store',
-    alt: 'e-store',
-    img: require('../images/thumbs/e-store-thumb.png'),
-    href: 'https://react-practice-e-store.netlify.com/',
-    description: 'As the name implies it is an e-commerce store that is not functional, however, it can be hooked up to paypal through an npm package. It uses react and the context API to keep track of state. Uses a combonation of bootstrap, and styled-components for styling.',
-    stack: 'React, React-Router, Context API, Styled-Components, Bootstrap'
-  },
-  {
-    id: 2,
-    title: 'Movie Finder',
-    alt: 'hackathon Movie Finder',
-    img: require('../images/thumbs/hackathon-lt.png'),
-    href: 'https://awesome-morse-9400db.netlify.app/',
-    description: 'A search engine for movies, makes two different API calls to find more details on the movie you search. Was made for a school project called Hackathon, in which we have 72 hours to make a Reactjs project from scratch. Uses bootstrap and css for styling and has 2 API calls.',
-    stack: 'React, CSS, Bootstrap, Axios, OMDB API'
-  },
-  {
-    id: 3,
-    title: 'weather-app',
-    alt: 'weather-app',
-    img: require('../images/thumbs/weather-app-thumb.png'),
-    href: 'https://youthful-banach-ce065f.netlify.app/',
-    description: 'In this project Redux, Axios, Reactjs, promise middleware, was used to create an app to check weather across any city searched. Also stores the history of each city search with the time and date searched using a dependecy called moment to format it.',
-    stack: 'React, Redux, Weather API, Axios, Bootstrap, CSS, Parcel.js'
-  },
-  {
-    id: 4,
-    title: 'oca-mobile-app',
-    alt: 'oca-mobile-app',
-    img: require('../images/thumbs/oca-app-thumb.jpg'),
-    href: 'https://play.google.com/store/apps/details?id=com.oca.OCApp',
-    description: 'Disclaimer: The school has shut down and is no longer in the google play store. However, when it was in use it was live. It was a Origin Code Academy mobile application for students to check-in and get information about progress in the program. In this project my group and I are using Expo, React Native, Redux, MongoDB, and loopback to create a mobile friendly replacement for a bar code scanner.',
-    stack: 'React-Native, Expo, React, Redux, Axios, Loopback, MongoDB'
-  },
-  {
-    id: 5,
-    title: 'vstda',
-    alt: 'vstda',
-    img: require('../images/thumbs/VSTDA-tumb.png'),
-    href: 'https://compassionate-benz-1ae465.netlify.com/',
-    description: 'Very simple to do app. As the name states it lets you organize todos for your daily life. Another project for school which uses Reactjs and bootsrap for styling. Creating this project was anything, but simple. Here state is passed up and down from different components.',
-    stack: 'React, Bootstrap, CSS, Parcel.js'
-  },
-  {
-    id: 6,
-    title: 'grid-sample-site',
-    alt: 'grid',
-    img: require('../images/thumbs/grid-sample-thumb.png'),
-    href: 'https://grid-express.herokuapp.com/',
-    description: 'A fun project that was orginally given to me as a front-end developer test and thought it would be a nice way to showcase some of my talents. Using HTML, CSS, and JavaScript',
-    stack: 'HTML, CSS, JavaScript, Express.js'
-  },
-  {
-    id: 7,
-    title: 'Cruz Performance',
-    alt: 'cruz performance',
-    img: require('../images/thumbs/cruz-performance-lt.png'),
-    href: 'https://cruzperformance.biz/',
-    description: 'A site created for a friends business. Got to use React hooks to create a burger menu to navigate around the different pages. Also set up links to direct a call or text to the business.',
-    stack: 'React, React Hooks, Styled-Components, CSS, Parcel.js'
-  },
-  {
-    id: 8,
-    title: 'Quiz App',
-    alt: 'quiz app',
-    img: require('../images/thumbs/quiz-app-thumb.png'),
-    href: 'https://js-quick-quiz-app.herokuapp.com/',
-    description: 'A quiz app that uses no framework only HTML,CSS,JS. It does a fetch call to Open Trivia Database for random questions. Uses local storage to save the top 5 high scores. Has a simple Express server.',
-    stack: 'HTML, CSS, JavaScript, Open Trivia DB API, Local Storage, Express.js'
-  },
-  {
-    id: 9,
-    title: 'Tip App',
-    alt: 'tip app',
-    img: require('../images/thumbs/laptop-tip-guide.png'),
-    href: 'https://stoic-tereshkova-3bc590.netlify.app/',
-    description: 'An app to help calculate your tip for any needed reason. Made with vanilla JS, and parcel.js to serve it.',
-    stack: 'HTML, CSS, JavaScript, Parcel.js'
-  },
-  {
-    id: 10,
-    title: 'Cash Tracking App',
-    alt: 'cash tracking app',
-    img: require('../images/thumbs/cash-tracking-lt.png'),
-    href: 'https://cash-tracking-app.netlify.app/',
-    description: "An app to help calculate your cash for any needed reason. Was a real need for myself and family members when we make bank deposits for my family's small business. Made with vanilla JS, and parcel.js to serve it.",
-    stack: 'HTML, CSS, JavaScript, Parcel.js'
-  },
-];
+// export const projects = [
+//   {
+//     id: 1,
+//     title: 'e-store',
+//     alt: 'e-store',
+//     img: require('../images/thumbs/e-store-thumb.png'),
+//     href: 'https://react-practice-e-store.netlify.com/',
+//     description: 'As the name implies it is an e-commerce store that is not functional, however, it can be hooked up to paypal through an npm package. It uses react and the context API to keep track of state. Uses a combonation of bootstrap, and styled-components for styling.',
+//     stack: 'React, React-Router, Context API, Styled-Components, Bootstrap'
+//   },
+//   {
+//     id: 2,
+//     title: 'Movie Finder',
+//     alt: 'hackathon Movie Finder',
+//     img: require('../images/thumbs/hackathon-lt.png'),
+//     href: 'https://awesome-morse-9400db.netlify.app/',
+//     description: 'A search engine for movies, makes two different API calls to find more details on the movie you search. Was made for a school project called Hackathon, in which we have 72 hours to make a Reactjs project from scratch. Uses bootstrap and css for styling and has 2 API calls.',
+//     stack: 'React, CSS, Bootstrap, Axios, OMDB API'
+//   },
+//   {
+//     id: 3,
+//     title: 'weather-app',
+//     alt: 'weather-app',
+//     img: require('../images/thumbs/weather-app-thumb.png'),
+//     href: 'https://youthful-banach-ce065f.netlify.app/',
+//     description: 'In this project Redux, Axios, Reactjs, promise middleware, was used to create an app to check weather across any city searched. Also stores the history of each city search with the time and date searched using a dependecy called moment to format it.',
+//     stack: 'React, Redux, Weather API, Axios, Bootstrap, CSS, Parcel.js'
+//   },
+//   {
+//     id: 4,
+//     title: 'oca-mobile-app',
+//     alt: 'oca-mobile-app',
+//     img: require('../images/thumbs/oca-app-thumb.jpg'),
+//     href: 'https://play.google.com/store/apps/details?id=com.oca.OCApp',
+//     description: 'Disclaimer: The school has shut down and is no longer in the google play store. However, when it was in use it was live. It was a Origin Code Academy mobile application for students to check-in and get information about progress in the program. In this project my group and I are using Expo, React Native, Redux, MongoDB, and loopback to create a mobile friendly replacement for a bar code scanner.',
+//     stack: 'React-Native, Expo, React, Redux, Axios, Loopback, MongoDB'
+//   },
+//   {
+//     id: 5,
+//     title: 'vstda',
+//     alt: 'vstda',
+//     img: require('../images/thumbs/VSTDA-tumb.png'),
+//     href: 'https://compassionate-benz-1ae465.netlify.com/',
+//     description: 'Very simple to do app. As the name states it lets you organize todos for your daily life. Another project for school which uses Reactjs and bootsrap for styling. Creating this project was anything, but simple. Here state is passed up and down from different components.',
+//     stack: 'React, Bootstrap, CSS, Parcel.js'
+//   },
+//   {
+//     id: 6,
+//     title: 'grid-sample-site',
+//     alt: 'grid',
+//     img: require('../images/thumbs/grid-sample-thumb.png'),
+//     href: 'https://grid-express.herokuapp.com/',
+//     description: 'A fun project that was orginally given to me as a front-end developer test and thought it would be a nice way to showcase some of my talents. Using HTML, CSS, and JavaScript',
+//     stack: 'HTML, CSS, JavaScript, Express.js'
+//   },
+//   {
+//     id: 7,
+//     title: 'Cruz Performance',
+//     alt: 'cruz performance',
+//     img: require('../images/thumbs/cruz-performance-lt.png'),
+//     href: 'https://cruzperformance.biz/',
+//     description: 'A site created for a friends business. Got to use React hooks to create a burger menu to navigate around the different pages. Also set up links to direct a call or text to the business.',
+//     stack: 'React, React Hooks, Styled-Components, CSS, Parcel.js'
+//   },
+//   {
+//     id: 8,
+//     title: 'Quiz App',
+//     alt: 'quiz app',
+//     img: require('../images/thumbs/quiz-app-thumb.png'),
+//     href: 'https://js-quick-quiz-app.herokuapp.com/',
+//     description: 'A quiz app that uses no framework only HTML,CSS,JS. It does a fetch call to Open Trivia Database for random questions. Uses local storage to save the top 5 high scores. Has a simple Express server.',
+//     stack: 'HTML, CSS, JavaScript, Open Trivia DB API, Local Storage, Express.js'
+//   },
+//   {
+//     id: 9,
+//     title: 'Tip App',
+//     alt: 'tip app',
+//     img: require('../images/thumbs/laptop-tip-guide.png'),
+//     href: 'https://stoic-tereshkova-3bc590.netlify.app/',
+//     description: 'An app to help calculate your tip for any needed reason. Made with vanilla JS, and parcel.js to serve it.',
+//     stack: 'HTML, CSS, JavaScript, Parcel.js'
+//   },
+//   {
+//     id: 10,
+//     title: 'Cash Tracking App',
+//     alt: 'cash tracking app',
+//     img: require('../images/thumbs/cash-tracking-lt.png'),
+//     href: 'https://cash-tracking-app.netlify.app/',
+//     description: "An app to help calculate your cash for any needed reason. Was a real need for myself and family members when we make bank deposits for my family's small business. Made with vanilla JS, and parcel.js to serve it.",
+//     stack: 'HTML, CSS, JavaScript, Parcel.js'
+//   },
+// ];
 
 export const timelineData = [
   {
