@@ -27,7 +27,7 @@ function Projects() {
             </div>
             <>
               <a className='a-column' href={project?.href} target='_blank' rel='noopener' alt={project.name}>
-                <img src={project.image?.url} alt={project.name} />
+                <img src={project.image?.url} alt={project.name} loading='lazy' />
               </a>
               <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
               <div className='project-info'>

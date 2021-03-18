@@ -33,13 +33,13 @@ const Footer = () => {
           <h2>Get in Touch With Me</h2>
         </div>
         <div className='in-touch'>
-          <a href='https://www.linkedin.com/in/evodio-garcia-57761669/' target='_blank' rel='noopener'>
+          <a href='https://www.linkedin.com/in/evodio-garcia-57761669/' target='_blank' rel='noopener'alt='personal linkedin'>
             <i className="fab fa-linkedin icon"></i>
           </a>
-          <a href='https://github.com/evo-g' target='_blank' rel='noopener'>
+          <a href='https://github.com/evo-g' target='_blank' rel='noopener' alt='personal github link'>
             <i className="fab fa-github-square icon"></i>
           </a>
-          <Link to='/contact'>
+          <Link to='/contact' alt='contact page'>
             <i className="far fa-envelope icon"></i>
           </Link>
         </div>
