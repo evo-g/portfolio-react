@@ -131,6 +131,12 @@ main {
   color: #000000;
 }
 
+.icon:hover {
+  transition: 0.3s ease all;
+  transform: scale(1.1);
+  color: #00a7e0;
+}
+
 .taller {
   display: flex;
   flex-direction: column;

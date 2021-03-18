@@ -304,7 +304,7 @@ export const timelineData = [
     date: 'January 2008 to October 2008',
     category: {
       tag: 'Education',
-      color: '#e21b1b',
+      color: '#f16969',
       study: 'Automotive Technology'
     },
     link: {
@@ -333,7 +333,7 @@ export const timelineData = [
     date: 'Summer 2011 to June 2016',
     category: {
       tag: 'Education',
-      color: '#e21b1b',
+      color: '#f16969',
       study: 'A.S. Business Administration & A.S. Business Technology'
     },
     link: {
@@ -348,7 +348,7 @@ export const timelineData = [
     date: 'January 2018 to August 2018',
     category: {
       tag: 'Education',
-      color: '#e21b1b',
+      color: '#f16969',
       study: 'Full Stack Software Development (MERN)'
     },
     link: {

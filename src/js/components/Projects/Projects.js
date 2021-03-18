@@ -24,10 +24,10 @@ function Projects() {
           <div className='project' key={project.id}>
             <div className='info-container'>
               <h3>{project.name}</h3>
-              <a className='color-gr' href={project.href} target='_blank' rel='noopener' alt={project.alt}>Check it out</a>
+              <a className='color-gr' href={project?.href} target='_blank' rel='noopener' alt={project.name}>Check it out</a>
             </div>
             <>
-              <a className='a-column' href={project.href} target='_blank' rel='noopener' alt={project.alt}>
+              <a className='a-column' href={project?.href} target='_blank' rel='noopener' alt={project.name}>
                 <img src={project.image?.url} alt={project.alt} />
               </a>
               <p className='tech-stack'><span>Tech Stack:</span> {project.stack}</p>
