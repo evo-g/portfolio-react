@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Profile from '../../../images/profile.jpg';
 
 const FooterWrapper = styled.footer`
   background-color: #131313;
@@ -33,7 +34,7 @@ const Footer = () => {
           <h2>Get in Touch With Me</h2>
         </div>
         <div className='in-touch'>
-          <a href='https://www.linkedin.com/in/evodio-garcia-57761669/' target='_blank' rel='noopener'alt='personal linkedin'>
+          <a href='https://www.linkedin.com/in/evodio-garcia-57761669/' target='_blank' rel='noopener' alt='personal linkedin'>
             <i className="fab fa-linkedin icon"></i>
           </a>
           <a href='https://github.com/evo-g' target='_blank' rel='noopener' alt='personal github link'>
@@ -45,7 +46,7 @@ const Footer = () => {
         </div>
       </section>
       <FooterWrapper>
-        <a href='/'><img src={require('../../../images/profile.jpg')} alt='my avatar' /></a>
+        <a href='/'><img src={Profile} alt='my avatar/home page' /></a>
         <div className='column-break'>
           <span>My Portfolio</span>
           <span>&copy; 2018</span>

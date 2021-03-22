@@ -23,19 +23,19 @@ function Navbar() {
             </span>
             <ul className='desk-nav'>
               <li>
-                <Link to='/'>Home</Link>
+                <Link to='/' alt='home page'>Home</Link>
               </li>
               <li>
-                <Link to='/about'>About</Link>
+                <Link to='/about' alt='about page'>About</Link>
               </li>
               <li>
-                <Link to='/services'>Services</Link>
+                <Link to='/services' alt='services page'>Services</Link>
               </li>
               <li>
-                <a href='https://tinyurl.com/y7wt8w4r' target='_blank' rel='noopener'>Resume</a>
+                <a href='https://tinyurl.com/y7wt8w4r' target='_blank' rel='noopener' alt='resume'>Resume</a>
               </li>
               <li>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/contact' alt='contact page'>Contact</Link>
               </li>
             </ul>
           </>
@@ -46,19 +46,19 @@ function Navbar() {
             </span>
             <ul className='top-nav'>
               <li>
-                <Link to='/' open={open} onClick={toggleOpen}>Home</Link>
+                <Link to='/' open={open} onClick={toggleOpen} alt='home page'>Home</Link>
               </li>
               <li>
-                <Link to='/about' open={open} onClick={toggleOpen}>About</Link>
+                <Link to='/about' open={open} onClick={toggleOpen} alt='about page'>About</Link>
               </li>
               <li>
-                <Link to='/services' open={open} onClick={toggleOpen}>Services</Link>
+                <Link to='/services' open={open} onClick={toggleOpen} alt='services page'>Services</Link>
               </li>
               <li>
-                <a href='https://tinyurl.com/y7wt8w4r' target='blank' open={open} onClick={toggleOpen}>Resume</a>
+                <a href='https://tinyurl.com/y7wt8w4r' target='blank' open={open} onClick={toggleOpen} alt='resume link'>Resume</a>
               </li>
               <li>
-                <Link to='/contact' open={open} onClick={toggleOpen}>Contact</Link>
+                <Link to='/contact' open={open} onClick={toggleOpen} alt='contact page'>Contact</Link>
               </li>
             </ul>
           </>
