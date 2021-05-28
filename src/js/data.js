@@ -392,7 +392,7 @@ export const timelineData = [
   {
     id: 7,
     text: 'NxtRobotics',
-    date: 'November 2020 to current',
+    date: 'November 2020 to April 2021',
     category: {
       tag: 'Tech Industry',
       color: '#81D4FA',
@@ -404,5 +404,21 @@ export const timelineData = [
     },
     info: 'Was tasked to refactor parts or their dashboard, and creating new pages which includes the backend. The project is using Docker which is something I had to refresh on. I am learning some new skills, including Laravel, creating controllers, requests, error codes, routes, creating seeders, and everything that goes to getting backend data to the front-end. On the front end worked with React.js to pull in that data and shape it using Ant Design to make it look nice and uniform across the site.',
     technologies: 'React.js, Redux, Redux Saga, Laravel, Docker, AntD'
+  },
+  {
+    id: 8,
+    text: 'Creating Coding Careers',
+    date: 'November 2020 to current',
+    category: {
+      tag: 'Tech Industry',
+      color: '#81D4FA',
+      study: 'Software Engineer'
+    },
+    link: {
+      url: 'https://cccareers.org/',
+      text: 'Contract work'
+    },
+    info: 'Currently working at Creating Coding Careers where I have worked on a few projects thus far. My first was training for Service Now, followed by working with slack-bot, next was an angular project for a company called Brain Leap where I help create a UI for their school admins. Currently I am working embedded with a company called Kind Regards, their platform is using Angular, NGRX, and Angular Material.',
+    technologies: 'Angular, TypeScript, NGRX, Angular/Material, Node.js, slack-bot, Zapier, and more'
   },
 ];
