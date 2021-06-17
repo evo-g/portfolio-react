@@ -408,7 +408,7 @@ export const timelineData = [
   {
     id: 8,
     text: 'Creating Coding Careers',
-    date: 'November 2020 to current',
+    date: 'March 2021 to current',
     category: {
       tag: 'Tech Industry',
       color: '#81D4FA',
@@ -418,7 +418,7 @@ export const timelineData = [
       url: 'https://cccareers.org/',
       text: 'Contract work'
     },
-    info: 'Currently working at Creating Coding Careers where I have worked on a few projects thus far. My first was training for Service Now, followed by working with slack-bot, next was an angular project for a company called Brain Leap where I help create a UI for their school admins. Currently I am working embedded with a company called Kind Regards, their platform is using Angular, NGRX, and Angular Material.',
+    info: 'Currently working at Creating Coding Careers where I have worked on a few projects thus far. My first week was training for Service Now, followed by working with slack-bot, next was an angular project for a company called Brain Leap where I helped create a UI for their school admins. Was working on embedded project with a company called Kind Regards, their platform used Angular, NGRX, and Angular Material. My current project is for a company called Hexis, the project is also using Angular and .Net for a learning platform for students.',
     technologies: 'Angular, TypeScript, NGRX, Angular/Material, Node.js, slack-bot, Zapier, and more'
   },
 ];
