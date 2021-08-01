@@ -7,6 +7,7 @@ const GET_PORJECTS = gql`
       id
       description
       href
+      codeHref
       stack
       image {
         url

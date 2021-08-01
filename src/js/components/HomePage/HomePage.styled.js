@@ -1,15 +1,23 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.section`
-  background: #FFFFFF;
-  background: -webkit-linear-gradient(top left, #A6BDB9, #FFFFFF);
-  background: -moz-linear-gradient(top left,  #A6BDB9, #FFFFFF);
-  background: linear-gradient(to bottom right,  #A6BDB9, #FFFFFF);
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // background: #FFFFFF;
+  // background: -webkit-linear-gradient(top left, #A6BDB9, #FFFFFF);
+  // background: -moz-linear-gradient(top left,  #A6BDB9, #FFFFFF);
+  // background: linear-gradient(to bottom right,  #A6BDB9, #FFFFFF);
   h2 {
     color: #FFF;
-    padding: .7rem;
-    margin: 0 auto;
-    text-align: center;
+    background-color: rgb(0 166 224 / 50%);
+    padding: 1rem 2rem 0;
+    margin: 0;
+    text-align: left;
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
   }
   h3 {
     color: #0024aa;
@@ -27,7 +35,7 @@ export const HomeWrapper = styled.section`
   }
   .project:hover {
     background-color: #FFF;
-    transition: 0.1s ease all;
+    transition: 0.3s ease all;
     box-shadow: 1px 1px 1px #BDBDBD;
     transform: scale(1.01);
   }

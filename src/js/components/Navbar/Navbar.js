@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef } from 'react';
 import { useOnClickOutside } from '../../hooks';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 function Navbar() {
   const [open, setOpen] = useState(false);

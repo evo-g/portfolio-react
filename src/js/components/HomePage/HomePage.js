@@ -9,7 +9,7 @@ function HomePage() {
     <HomeWrapper>
       <Welcome />
       <h2>Projects</h2>
-      <div className='row'>
+      <div className='row projects-section'>
         <Projects />
       </div>
       <h3>More Coming Soon</h3>
