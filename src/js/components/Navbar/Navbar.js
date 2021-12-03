@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef, Fragment } from 'react';
 import { useOnClickOutside } from '../../hooks';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -17,8 +17,9 @@ function Navbar() {
   return (
     <header ref={node}>
       <nav>
-        {!open ?
-          <>
+        {
+          !open ?
+          <Fragment>
             <span className='navbar-toggle' open={open} onClick={toggleOpen}>
               <i className='fas fa-bars'></i>
             </span>
@@ -39,11 +40,11 @@ function Navbar() {
                 <Link to='/contact' alt='contact page'>Contact</Link>
               </li>
             </ul>
-          </>
+          </Fragment>
           :
-          <>
+          <Fragment>
             <span className='navbar-toggle' open={open} onClick={toggleOpen}>
-              <i class="fas fa-times"></i>
+              <i className='fas fa-times'></i>
             </span>
             <ul className='top-nav'>
               <li>
@@ -62,7 +63,7 @@ function Navbar() {
                 <Link to='/contact' open={open} onClick={toggleOpen} alt='contact page'>Contact</Link>
               </li>
             </ul>
-          </>
+          </Fragment>
         }
       </nav>
     </header>

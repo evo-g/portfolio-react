@@ -2,6 +2,7 @@ html {
   -webkit-font-smoothing: antialiased;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 62.5%;
+  font-weight: 600;
 }
 *, *::after, *::before {
   box-sizing: border-box;
@@ -11,15 +12,20 @@ body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   word-wrap: break-word;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   width: 100%;
-  width: 100%;  background: #FFFFFF;
-  background: -webkit-linear-gradient(top left, #A6BDB9, #FFFFFF);
+  width: 100%;  
+  background-color: #FFFFFF;
+  /* background: -webkit-linear-gradient(top left, #A6BDB9, #FFFFFF);
   background: -moz-linear-gradient(top left,  #A6BDB9, #FFFFFF);
   background: linear-gradient(to bottom right,  #A6BDB9, #FFFFFF);
-  font-weight: 500;
+  font-weight: 500; */
 }
+
+/* #f53e7c hot pink */
+/* #00938b  teal */
+
 
 main {
   height: 100vh;
@@ -28,25 +34,26 @@ main {
 
 .container {
   margin: 0px auto;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
 }
 
 #home {
-  background-color: #53899f;
+  /* background-color: #53899f; */
 }
 
-/* site-section */
+/* site-section  work on this next */
 
 .row {
   display: grid;
   grid-gap: 3rem;
   padding: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
 }
 
 .projects-section {
-  background-color: rgb(0 166 224 / 50%);
+  /* background-color: rgb(0 166 224 / 50%); */
   padding: 2rem 1rem;
   /* border-radius: 11px; */
   border-bottom-left-radius: 11px;
@@ -63,9 +70,9 @@ main {
 
 #about {
   background: #FFFFFF;
-  background: -webkit-linear-gradient(top left, #FFFFFF, #A6BDB9);
+  /* background: -webkit-linear-gradient(top left, #FFFFFF, #A6BDB9);
   background: -moz-linear-gradient(top left, #FFFFFF, #A6BDB9);
-  background: linear-gradient(to bottom right, #FFFFFF, #A6BDB9);
+  background: linear-gradient(to bottom right, #FFFFFF, #A6BDB9); */
   margin: 0 0 2rem;
   padding: 0;
   line-height: 30px;
@@ -157,7 +164,8 @@ main {
   align-items: center;
 }
 
-.taller h2 {
+/* Contact Page */
+.contact-container {
   font-size: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -220,7 +228,7 @@ main {
   z-index: 99;
 }
 
-.fa-times {
+.fa-times, .fa-bars, .fas {
   display: none;
 }
 
@@ -250,6 +258,7 @@ a {
   color: #00a7e0;
   padding: 8px 16px;
 }
+
 ul li a:hover {
   background: #444;
   border-radius: 3px;
@@ -259,10 +268,8 @@ ul li a:hover {
 /* mobile nav helpers */
 
 .navbar-toggle {
-  transition: ease;
+  transition: 0.3s ease all;
 }
-
-
 
 /* loader */
 #loader {
@@ -287,7 +294,7 @@ ul li a:hover {
 
 /* figure out the toggle with state and make a function to display stuff think vstda */
 @media screen and (max-width: 700px) {
-  .fas {
+  .fas, .fa-bars {
     display: block;
   }
 
@@ -360,6 +367,11 @@ ul li a:hover {
   }
   .project {
     margin: 5px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 

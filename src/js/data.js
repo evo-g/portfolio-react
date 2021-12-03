@@ -408,7 +408,7 @@ export const timelineData = [
   {
     id: 8,
     text: 'Creating Coding Careers',
-    date: 'March 2021 to current',
+    date: 'March 2021 to August 2021',
     category: {
       tag: 'Tech Industry',
       color: '#81D4FA',
@@ -420,5 +420,21 @@ export const timelineData = [
     },
     info: 'Currently working at Creating Coding Careers where I have worked on a few projects thus far. My first week was training for Service Now, followed by working with slack-bot, next was an angular project for a company called Brain Leap where I helped create a UI for their school admins. Was working on embedded project with a company called Kind Regards, their platform used Angular, NGRX, and Angular Material. My current project is for a company called Hexis, the project is also using Angular and .Net for a learning platform for students.',
     technologies: 'Angular, TypeScript, NGRX, Angular/Material, Node.js, slack-bot, Zapier, and more'
+  },
+  {
+    id: 9,
+    text: 'NewRocket',
+    date: 'June 2021 to current',
+    category: {
+      tag: 'Tech Industry',
+      color: '#81D4FA',
+      study: 'Associate Front-end Developer'
+    },
+    link: {
+      url: 'https://newrocket.com/',
+      text: 'Contract work'
+    },
+    info: 'Front-end development on Service Portal from ServiceNow. It has been a challenge to learn and adapt to working with ServiceNow, but I have a talented group of individuals helping me along the way!',
+    technologies: 'AngularJS, ServiceNow, JavaScript, CSS, Bootstrap, HTML'
   },
 ];
