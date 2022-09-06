@@ -41,6 +41,7 @@ lib-cov
 
 npm-debug.log*
 
+.parcel-cache
 
 reports
 cypress/screenshots/

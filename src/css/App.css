@@ -262,7 +262,9 @@ ul li a:hover {
   transition: ease;
 }
 
-
+.fas.fa-bars {
+  display: none;
+}
 
 /* loader */
 #loader {
@@ -287,7 +289,7 @@ ul li a:hover {
 
 /* figure out the toggle with state and make a function to display stuff think vstda */
 @media screen and (max-width: 700px) {
-  .fas {
+  .fas.fa-bars {
     display: block;
   }
 
