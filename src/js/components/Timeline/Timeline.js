@@ -17,7 +17,6 @@ const TimelineItem = ({ data }) => (
           href={data.link.url}
           target='_blank'
           rel='noopener'
-          rel='noopener noreferrer'
         >
           {data.link.text}
         </a>

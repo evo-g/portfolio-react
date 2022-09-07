@@ -14,11 +14,11 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-const HomePage = loadable(() => import('./components/HomePage'));
-const AboutPage = loadable(() => import('./components/AboutPage'));
-const ContactPage = loadable(() => import('./components/ContactPage'));
-const ServicesPage = loadable(() => import('./components/ServicesPage'));
-const DefaultPage = loadable(() => import('./components/DefaultPage'));
+const HomePage = loadable(() => import('./pages/HomePage'));
+const AboutPage = loadable(() => import('./pages/AboutPage'));
+const ContactPage = loadable(() => import('./pages/ContactPage'));
+const ServicesPage = loadable(() => import('./pages/ServicesPage'));
+const DefaultPage = loadable(() => import('./pages/DefaultPage'));
 
 export default () => (
   <ApolloProvider client={client}>

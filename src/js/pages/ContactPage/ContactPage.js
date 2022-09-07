@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Contact = () => {
+const ContactPage = () => {
   return (
-    <div className='taller'>
+    <section class="wrapper" id="contact">
       <div className='second'>
         <h2>Thanks For Checking My Site Out</h2>
       </div>
@@ -18,8 +18,8 @@ const Contact = () => {
           Loading...
         </iframe>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default Contact;
+export default ContactPage;

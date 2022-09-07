@@ -1,10 +1,11 @@
 .card {
   display: flex;
   margin: 3rem auto 2rem;
+  gap: 1rem;
   padding: 1rem;
   color:  inherit;
-  font-weight: 400;
-  flex-direction: column;
+  font-weight: 600;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -20,7 +21,7 @@
 
 .card p {
   color: #373736;
-  width: 85vw;
+  
   padding: 1rem;
   text-align: center;
 }
@@ -31,14 +32,14 @@ strong {
 
 .card img {
   object-fit: cover;
-  width: clamp(15rem, 25vw, 30rem); 
-  border-radius: 50%;
+  width: clamp(15rem, 18vw, 30rem); 
+  border-radius: 5%;
   margin: 0 0 1rem;
 }
 
 .card a {
   margin: 1rem;
-  bottom: 0;
+  /* bottom: 0; */
   text-decoration: none;
   color: #F5F5F5;
   background-color: #0288D1;
@@ -50,4 +51,10 @@ strong {
 .card a:hover {
   opacity: 0.5;
   transition: 0.1s ease all;
+}
+
+.card-child {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

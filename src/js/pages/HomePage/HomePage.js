@@ -1,19 +1,19 @@
 import React from 'react';
-import Welcome from '../WelcomePage';
-import Projects from '../Projects';
-import { HomeWrapper } from './HomePage.styled';
+import Welcome from '../../components/Welcome';
+import Projects from '../../components/Projects';
+import './HomePage.css';
 
 function HomePage() {
 
   return (
-    <HomeWrapper>
+    <section class="wrapper" id="home">
       <Welcome />
       <h2>Projects</h2>
-      <div className='row projects-section'>
+      <div className='grid-row projects-section'>
         <Projects />
       </div>
       <h3>More Coming Soon</h3>
-    </HomeWrapper>
+    </section>
   )
 }
 

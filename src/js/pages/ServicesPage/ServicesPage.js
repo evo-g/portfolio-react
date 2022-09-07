@@ -37,7 +37,7 @@ const familiarTech = familiarServices.map(service => {
 
 const ServicePage = () => {
   return (
-    <section id='services'>
+    <section class="wrapper" id="services">
       <div className='services'>
       <h2>Core Technologies</h2>
       <ul>{mainTech}</ul>
