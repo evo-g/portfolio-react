@@ -1,34 +1,35 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import Profile from '../../../images/profile.jpg';
+import './Footer.css';
 
-const FooterWrapper = styled.footer`
-  background-color: #131313;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-  bottom: 0;
-  img {
-    display: flex;
-    border-radius: 15px;
-    height: 3.5rem;
-    width: 3.5rem;
-    margin: 1rem;
-  }
-  .column-break {
-    display: flex;
-    flex-direction: column;
-  }
-`;
+// const FooterWrapper = styled.footer`
+//   background-color: #131313;
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: row;
+//   color: #fff;
+//   padding: 2rem;
+//   text-align: center;
+//   bottom: 0;
+//   img {
+//     display: flex;
+//     border-radius: 15px;
+//     height: 3.5rem;
+//     width: 3.5rem;
+//     margin: 1rem;
+//   }
+//   .column-break {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// `;
 
 const Footer = () => {
   return (
-    <>
+    <Fragment>
       <section className='connect'>
         <div className='end'>
           <h2>Get in Touch With Me</h2>
@@ -45,14 +46,14 @@ const Footer = () => {
           </Link>
         </div>
       </section>
-      <FooterWrapper>
+      <footer className='footer-port'>
         <a href='/'><img src={Profile} alt='my avatar/home page' /></a>
         <div className='column-break'>
           <span>My Portfolio</span>
           <span>&copy; 2018</span>
         </div>
-      </FooterWrapper>
-    </>
+      </footer>
+    </Fragment>
   )
 }
 

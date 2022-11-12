@@ -1,0 +1,23 @@
+.footer-port {
+  background-color: #131313;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer-port img {
+  display: flex;
+  border-radius: 15px;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 1rem;
+}
+.footer-port .column-break {
+  display: flex;
+  flex-direction: column;
+}
