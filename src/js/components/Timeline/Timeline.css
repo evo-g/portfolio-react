@@ -67,8 +67,8 @@
   color: #fff;
   font-size: 12px;
   font-weight: bold;
-  top: 5px;
-  left: 5px;
+  top: 15px;
+  left: 15px;
   letter-spacing: 1px;
   padding: 5px;
   position: absolute;
@@ -78,7 +78,7 @@
 
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
   left: auto;
-  right: 5px;
+  right: 15px;
 }
 
 .timeline-item-content time {

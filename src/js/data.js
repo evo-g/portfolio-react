@@ -4,37 +4,37 @@ export const mainTechnologies = [
     id: 1,
     title: 'JavaScript',
     alt: 'javaScript',
-    experience: '3 years'
+    experience: '5 years'
   },
   {
     id: 2,
     title: 'CSS',
     alt: 'css',
-    experience: '3 years'
+    experience: '5 years'
   },
   {
     id: 3,
     title: 'HTML',
     alt: 'html',
-    experience: '3 years'
+    experience: '5 years'
   },
   {
     id: 4,
     title: 'React.js',
     alt: 'reactjs',
-    experience: '3 years'
+    experience: '5 years'
   },
   {
     id: 5,
     title: 'Node.js',
     alt: 'nodejs',
-    experience: '2 years'
+    experience: '5 years'
   },
   {
     id: 6,
     title: 'Express.js',
     alt: 'expressjs',
-    experience: '2 years'
+    experience: '4 years'
   },
   {
     id: 7,
@@ -46,7 +46,7 @@ export const mainTechnologies = [
     id: 8,
     title: 'Redux',
     alt: 'redux',
-    experience: '2 years'
+    experience: '3 years'
   },
   {
     id: 9,
@@ -58,26 +58,33 @@ export const mainTechnologies = [
     id: 10,
     title: 'Parcel.js',
     alt: 'parcel',
-    experience: '1 year'
+    experience: '3 year'
   },
   {
     id: 11,
     title: 'Netlify',
     alt: 'netlify',
-    experience: '1 year'
+    experience: '3 year'
   },
   {
     id: 12,
     title: 'ES6',
     alt: 'es6',
-    experience: '2 years'
+    experience: '5 years'
   },
   {
     id: 13,
     title: 'Git',
     alt: 'git',
+    experience: '4 years'
+  },
+  {
+    id: 14,
+    title: 'ServiceNow',
+    img: null,
+    alt: 'service now platform',
     experience: '2 years'
-  }
+  },
 ];
 
 export const servicesMedium = [
@@ -190,13 +197,6 @@ export const familiarServices = [
   },
   {
     id: 7,
-    title: 'ServiceNow',
-    img: null,
-    alt: 'service now platform',
-    experience: 'Actively learning'
-  },
-  {
-    id: 8,
     title: 'The Open CLI Framework',
     img: null,
     alt: 'The Open CLI Framework',
@@ -400,7 +400,7 @@ export const timelineData = [
     },
     link: {
       url: 'https://www.nxtrobotics.com/',
-      text: 'Contract work'
+      text: 'Contact work'
     },
     info: 'Was tasked to refactor parts or their dashboard, and creating new pages which includes the backend. The project is using Docker which is something I had to refresh on. I am learning some new skills, including Laravel, creating controllers, requests, error codes, routes, creating seeders, and everything that goes to getting backend data to the front-end. On the front end worked with React.js to pull in that data and shape it using Ant Design to make it look nice and uniform across the site.',
     technologies: 'React.js, Redux, Redux Saga, Laravel, Docker, AntD'
@@ -408,7 +408,7 @@ export const timelineData = [
   {
     id: 8,
     text: 'Creating Coding Careers',
-    date: 'March 2021 to current',
+    date: 'March 2021 to September 2021',
     category: {
       tag: 'Tech Industry',
       color: '#81D4FA',
@@ -416,9 +416,25 @@ export const timelineData = [
     },
     link: {
       url: 'https://cccareers.org/',
-      text: 'Contract work'
+      text: 'Contact work'
     },
-    info: 'Currently working at Creating Coding Careers where I have worked on a few projects thus far. My first week was training for Service Now, followed by working with slack-bot, next was an angular project for a company called Brain Leap where I helped create a UI for their school admins. Was working on embedded project with a company called Kind Regards, their platform used Angular, NGRX, and Angular Material. My current project is for a company called Hexis, the project is also using Angular and .Net for a learning platform for students.',
+    info: 'At Creating Coding Careers I worked on various projects. My first week was training for Service Now, followed by working with slack-bot, next was an angular project for a company called Brain Leap where I helped create a UI for their school admins. Was working on embedded project with a company called Kind Regards, their platform used Angular, NGRX, and Angular Material. My current project is for a company called Hexis, the project is also using Angular and .Net for a learning platform for students.',
+    technologies: 'Angular, TypeScript, NGRX, Angular/Material, Node.js, slack-bot, Zapier, and more'
+  },
+  {
+    id: 9,
+    text: 'NewRocket LLC',
+    date: 'Jun 2021 to current',
+    category: {
+      tag: 'Tech Industry',
+      color: '#81D4FA',
+      study: 'Software Engineer'
+    },
+    link: {
+      url: 'https://newrocket.com/',
+      text: 'Contact work'
+    },
+    info: 'I work on creating custom Service Portals for various clients. Portals are created in ServiceNow Portal framework. Started through an apprenticeship program and was hired on full time in October 2021. Main language is JavaScript and configuring backend data for the frontend to be used. For the frontend framework AngularJS is being used, Bootstrap, CSS, and SASS. Creating custom templates using HTML. NewRocket has a collection of custom widgets that are similar to components for building Service Portals. I have contributed to product enhancement to match our internal design system and retain backwards compatibility. The widgets have a complex learning curve they have access to both client and server side scripts to receive data from the platform or inputs. Inputs can be from a form, along with also passing in different options that each instance of the widget per page. CSA certified as of Sept 2022.',
     technologies: 'Angular, TypeScript, NGRX, Angular/Material, Node.js, slack-bot, Zapier, and more'
   },
 ];

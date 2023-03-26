@@ -21,18 +21,22 @@
 
 .card p {
   color: #373736;
-  
+  margin-top: .5rem;
   padding: 1rem;
-  text-align: center;
+  text-align: right;
 }
 
 strong {
-  color: #FFF;
+  color: #5FD3BB;
+}
+
+p strong {
+  color: #FC2683;
 }
 
 .card img {
   object-fit: cover;
-  width: clamp(15rem, 18vw, 30rem); 
+  width: clamp(12rem, 16vw, 24rem); 
   border-radius: 5%;
   margin: 0 0 1rem;
 }
@@ -57,4 +61,25 @@ strong {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+a.newrocket {
+  color: #573D82;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    flex-direction: column-reverse;
+  }
+  .button-container {
+    justify-content: center;
+  }
 }

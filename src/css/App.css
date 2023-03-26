@@ -19,10 +19,8 @@ body {
   font-size: 17px;
   line-height: 1.5;
   width: 100%;
-  width: 100%;  background: var(--white);
-  background: -webkit-linear-gradient(top left, var(--opal), var(--white));
-  background: -moz-linear-gradient(top left,  var(--opal), var(--white));
-  background: linear-gradient(to bottom right,  var(--opal), var(--white));
+  width: 100%;
+  background: var(--white);
   font-weight: 500;
 }
 
@@ -70,6 +68,8 @@ main {
 
 #about {
   /* margin: 0 0 2rem; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0;
   line-height: 30px;
   font-size: 17px;
@@ -92,7 +92,7 @@ main {
 
 .about-intro {
   display: flex;
-  margin: 3rem auto 2rem;
+  
   padding: 1rem;
   color: #000000;
   font-weight: 400;
@@ -287,6 +287,12 @@ ul li a:hover {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 1rem;
   }
 }
 
