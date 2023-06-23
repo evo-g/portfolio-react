@@ -1,40 +1,70 @@
+function findStartDate(startDate) {
+  // Get the current date
+  var currentDate = new Date();
+
+  // Convert the start date to a Date object
+  var startDateObj = new Date(startDate);
+
+  // Calculate the time difference in milliseconds
+  var timeDiff = currentDate.getTime() - startDateObj.getTime();
+
+  // Calculate the time difference in seconds, minutes, hours, and days
+  var seconds = Math.floor(timeDiff / 1000);
+  var minutes = Math.floor(seconds / 60);
+  var hours = Math.floor(minutes / 60);
+  var days = Math.floor(hours / 24);
+  let years = Math.floor(days/ 365)
+
+  // Format the time difference in a "time ago" format
+  if (years > 0) {
+    return `${years} years`
+  } else if (days > 0) {
+    return days + " day(s) ago";
+  } else if (hours > 0) {
+    return hours + " hour(s) ago";
+  } else if (minutes > 0) {
+    return minutes + " minute(s) ago";
+  } else {
+    return "Just now";
+  }
+}
 
 export const mainTechnologies = [
   {
     id: 1,
     title: 'JavaScript',
     alt: 'javaScript',
-    experience: '5 years'
+    experience: findStartDate('2018-01-30')
   },
   {
     id: 2,
     title: 'CSS',
     alt: 'css',
-    experience: '5 years'
+    experience: findStartDate('2018-01-30')
   },
   {
     id: 3,
     title: 'HTML',
     alt: 'html',
-    experience: '5 years'
+    experience: findStartDate('2018-01-30')
   },
   {
     id: 4,
     title: 'React.js',
     alt: 'reactjs',
-    experience: '5 years'
+    experience: findStartDate('2018-03-01')
   },
   {
     id: 5,
     title: 'Node.js',
     alt: 'nodejs',
-    experience: '5 years'
+    experience: findStartDate('2018-02-15')
   },
   {
     id: 6,
     title: 'Express.js',
     alt: 'expressjs',
-    experience: '4 years'
+    experience: findStartDate('2018-02-15')
   },
   {
     id: 7,
@@ -58,19 +88,19 @@ export const mainTechnologies = [
     id: 10,
     title: 'Parcel.js',
     alt: 'parcel',
-    experience: '3 year'
+    experience: '3 years'
   },
   {
     id: 11,
     title: 'Netlify',
     alt: 'netlify',
-    experience: '3 year'
+    experience: '3 years'
   },
   {
     id: 12,
     title: 'ES6',
     alt: 'es6',
-    experience: '5 years'
+    experience: findStartDate('2018-02-15')
   },
   {
     id: 13,
@@ -148,7 +178,7 @@ export const servicesMedium = [
     title: 'Figma',
     img: null,
     alt: 'figma',
-    experience: '1 1/2 years'
+    experience: '2 years'
   },
 ];
 
@@ -297,6 +327,8 @@ export const familiarServices = [
 //   },
 // ];
 
+
+// setup graph cms to add timeline data
 export const timelineData = [
   {
     id: 1,

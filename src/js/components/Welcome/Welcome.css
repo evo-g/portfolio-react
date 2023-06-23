@@ -36,7 +36,7 @@ p strong {
 
 .card img {
   object-fit: cover;
-  width: clamp(12rem, 16vw, 24rem); 
+  width: clamp(12rem, 15vw, 24rem); 
   border-radius: 5%;
   margin: 0 0 1rem;
 }

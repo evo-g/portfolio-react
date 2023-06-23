@@ -3,7 +3,7 @@
   top: 2.5rem;
   right: 2rem;
   cursor: pointer;
-  color: #00a7e0;
+  color: var(--cool-blue);
   font-size: 24px;
   display: none;
   z-index: 99;

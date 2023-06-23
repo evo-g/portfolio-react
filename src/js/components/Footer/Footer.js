@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Profile from '../../../images/profile.jpg';
@@ -28,10 +28,10 @@ const FooterWrapper = styled.footer`
 
 const Footer = () => {
   return (
-    <>
+    <Fragment>
       <section className='connect'>
         <div className='end'>
-          <h2>Get in Touch With Me</h2>
+          <h3>Get in Touch With Me</h3>
         </div>
         <div className='in-touch'>
           <a href='https://www.linkedin.com/in/evodio-garcia-57761669/' target='_blank' rel='noopener' alt='personal linkedin'>
@@ -52,7 +52,7 @@ const Footer = () => {
           <span>&copy; 2018</span>
         </div>
       </FooterWrapper>
-    </>
+    </Fragment>
   )
 }
 

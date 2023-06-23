@@ -6,7 +6,7 @@ import './HomePage.css';
 function HomePage() {
 
   return (
-    <section class="wrapper" id="home">
+    <section className="wrapper" id="home">
       <Welcome />
       <h2>Projects</h2>
       <div className='grid-row projects-section'>
@@ -18,3 +18,4 @@ function HomePage() {
 }
 
 export default HomePage;
+

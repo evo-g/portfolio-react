@@ -1,24 +1,39 @@
 import React from 'react';
-import { timelineData } from '../../data';
+import { useQuery } from '@apollo/client';
+import Loading from '../Loading'
+import GET_HISTORY from '../../graphql/getHistory';
 import './Timeline.css';
+
+const findTagColor = (str = '') => {
+  let temp = str.toLowerCase().trim().split(' ').join('_');
+  console.log({temp})
+  const guide = {
+    tech: 'tech',
+    tech_education: 'tech-education',
+    education: 'education',
+    work_automotive: 'work-automotive'
+  };
+  console.log(guide[temp])
+  return guide[temp]
+}
 
 const TimelineItem = ({ data }) => (
   <div className='timeline-item'>
     <div className='timeline-item-content'>
-      <span className='tag' style={{ background: data.category.color }}>
-        {data.category.tag}
+      <span className={`tag ${findTagColor(data.historyType)}`}>
+        {data.historyType}
       </span>
       <br />
-      <time>{data.date}</time>
-      <h3>{data.text}</h3>
+      <time>{data.dateRange}</time>
+      <h3>{data.titleCard}</h3>
       <p>{data.info}</p>
-      {data.link && (
+      {data.contact && (
         <a
-          href={data.link.url}
+          href={data.contact}
           target='_blank'
           rel='noopener'
         >
-          {data.link.text}
+          Learn More
         </a>
       )}
       <span className='circle' />
@@ -26,14 +41,28 @@ const TimelineItem = ({ data }) => (
   </div>
 );
 
+function Timeline() {
 
-const Timeline = () =>
-  timelineData.length > 0 && (
+  const { data: { histories = [] } = {}, loading, error } = useQuery(
+    GET_HISTORY,
+    {
+      fetchPolicy: 'network-only'
+    }
+  )
+
+  if (loading) {
+    return <Loading />;
+  }
+
+  console.log(histories)
+
+  return histories.length > 0 && (
     <div className='timeline-container'>
-      {timelineData.reverse().map((data, idx) => (
+      {histories.map((data, idx) => (
         <TimelineItem data={data} key={idx} />
       ))}
     </div>
   );
+}
 
 export default Timeline;

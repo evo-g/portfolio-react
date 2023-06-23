@@ -1,11 +1,12 @@
 h2 {
-  color: #FFF;
-  background-color: rgb(0 166 224 / 50%);
+  color: var(--white);
+  background: linear-gradient(to right, #FC2683, var(--medium-gray),#5FD3BB);
   padding: 1rem 2rem 0;
   margin: 0;
   text-align: left;
-  border-top-right-radius: 11px;
-  border-top-left-radius: 11px;
+  border-top-right-radius: 1.1rem;
+  border-top-left-radius: 1.1rem;
+  opacity: .8;
 }
 h3 {
   color: #0024aa;
@@ -20,6 +21,10 @@ h3 {
   border-radius: 8px;
   align-items: center;
   box-shadow: 1px 1px 1px #F5F5F5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .project:hover {
   background-color: #FFF;
@@ -29,7 +34,7 @@ h3 {
 }
 .tech-stack {
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
   text-align: center;
 }
 .tech-stack span {
@@ -46,22 +51,11 @@ h3 {
   overflow-y: auto;
   
 }
-.info-container {
+/* .info-container {
   display: flex;
   justify-content: space-between;
-}
-.color-gr {
-  text-decoration: none;
-  color: #F5F5F5;
-  background-color: #6ac7c2;
-  padding: 10px 8px;
-  border-radius: 8px;
-  text-align: center;
-}
-.color-gr:hover {
-  opacity: 0.5;
-  transition: 0.1s ease all;
-}
+} */
+
 .project h3 {
   margin: 0 0 0 1rem;
   color:  #01579B;
@@ -80,7 +74,7 @@ h3 {
 .project img {
   object-fit: cover;
   display: block;
-  width: min(100%, 35rem);
+  width: min(100%, 25rem);
   border-radius: 8px;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
 }

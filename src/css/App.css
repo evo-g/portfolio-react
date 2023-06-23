@@ -2,10 +2,22 @@
   --white: #FFFFFF;
   --opal: #A6BDB9;
   --rasin-black: #242424;
+  --border-radius: 1.1rem;
+  --light-gray: #E0E0E0;
+  --medium-gray: #808080;
+  --hot-pink: #FC2683;
+  --teal: #5FD3BB;
+  --cool-blue: #00a7e0;
 }
+/* needs so much css work honestly not even sure if I am in good starting point
+  but for now working on the nav
+  the headings need help color gradient might be too much
+  overall trying to reduce the amount of css used 
+ */
+
 html {
   -webkit-font-smoothing: antialiased;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 62.5%;
 }
 *, *::after, *::before {
@@ -14,18 +26,16 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   word-wrap: break-word;
   font-size: 17px;
   line-height: 1.5;
-  width: 100%;
-  width: 100%;
   background: var(--white);
   font-weight: 500;
 }
 
 main {
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
 }
 
@@ -43,10 +53,6 @@ main {
   justify-content: center;
 }
 
-#home {
-  /* background-color: #53899f; */
-}
-
 /* site-section */
 
 .grid-row {
@@ -57,11 +63,31 @@ main {
 }
 
 .projects-section {
-  background-color: rgb(0 166 224 / 50%);
+  background-color: var(--light-gray);
   padding: 2rem 1rem;
-  /* border-radius: 11px; */
-  border-bottom-left-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.btn {
+  text-decoration: none;
+  color: #F5F5F5;
+  background-color: orange;
+  padding: 1rem .8rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.6;
+  transition: 0.1s ease all;
+}
+
+.to-right {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  margin-top: 3rem;
 }
 
 /*About*/
@@ -221,6 +247,7 @@ main {
   background-color: #131313;
   background-size: 20px 20px;
   z-index: 99;
+  width: 100%;
 }
 
 .fa-times {
@@ -250,12 +277,12 @@ a {
 }
 
 .desk-nav li a {
-  color: #00a7e0;
-  padding: 8px 16px;
+  color: var(--cool-blue);
+  padding: .8rem 1.6rem;
 }
 ul li a:hover {
   background: #444;
-  border-radius: 3px;
+  border-radius: .3rem;
   white-space: nowrap;
 }
 
@@ -290,6 +317,15 @@ ul li a:hover {
   }
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     padding: 1rem;
@@ -300,6 +336,7 @@ ul li a:hover {
 @media screen and (max-width: 700px) {
   .fas.fa-bars {
     display: block;
+    position: fixed;
   }
 
   .desk-nav {
@@ -311,7 +348,7 @@ ul li a:hover {
   }
 
   .fa-times {
-    position: absolute;
+    position: fixed;
     z-index: 200;
   }
 
@@ -325,9 +362,10 @@ ul li a:hover {
     z-index: 99;
     text-align: center;
     padding: 2rem;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     transition: transform 0.3s ease-in-out;
     background:
     linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
@@ -338,6 +376,7 @@ ul li a:hover {
     linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, var(--rasin-black) 75%, var(--rasin-black));
     background-color: #131313;
     background-size: 20px 20px;
+    animation: slideIn 0.3s ease-in-out;
   }
   
   .top-nav li {

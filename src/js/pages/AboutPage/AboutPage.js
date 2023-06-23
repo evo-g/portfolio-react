@@ -3,7 +3,7 @@ import Timeline from "../../components/Timeline";
 
 function AboutPage () {
   return (
-    <section class="wrapper" id="about">
+    <section className="wrapper" id="about">
       <div className="about-intro">
         <h3>About Me</h3>
         <p className="about-me">
