@@ -7,7 +7,7 @@ import {
 import loadable from '@loadable/component';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import { Navbar, Footer } from './components';
-import '../css/App.css';
+import '../App.css';
 
 const client = new ApolloClient({
   uri: 'https://api-us-west-2.graphcms.com/v2/ckhn1m4m5e64i01xp9b6vczdu/master',

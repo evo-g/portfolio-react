@@ -13,7 +13,7 @@ const findTagColor = (str = '') => {
     education: 'education',
     work_automotive: 'work-automotive'
   };
-  console.log(guide[temp])
+  // console.log(guide[temp])
   return guide[temp]
 }
 
